@@ -20,38 +20,38 @@
   "grants": [
     {
       "title": "动态三维扫描关键技术研究",
-      "agency": "国家自然科学基金委员会 · 青年科学基金项目",
+      "agency": "National Natural Science Foundation of China (NSFC) · Young Scientists Fund",
       "dates": "Jan. 2022 – Dec. 2024",
       "role": "Principal Investigator",
       "note": "Dynamic 3D scanning"
     },
     {
       "title": "三维通用表征学习方法研究",
-      "agency": "广东省自然科学基金 · 面上项目",
+      "agency": "Guangdong Basic and Applied Basic Research Foundation · General Program",
       "dates": "Jan. 2023 – Dec. 2025",
       "role": "Principal Investigator",
-      "note": "Visual-perception-driven general 3D representation learning."
+      "note": "Visual-perception-driven general 3D representation learning"
     },
     {
       "title": "重载移动机器人关键技术研发",
-      "agency": "深圳市科技创新委员会 · 科技重大专项",
+      "agency": "Shenzhen Science and Technology Innovation Commission · Major Science and Technology Project",
       "dates": "Jan. 2024 – Dec. 2026",
-      "role": "Project Participant（合作单位负责人）",
-      "note": "Key technologies of heavy-duty mobile robots for construction machinery."
+      "role": "Project Participant (Lead Investigator at the Partner Institution)",
+      "note": "Key technologies of heavy-duty mobile robots for construction machinery"
     },
     {
       "title": "桥梁缆索修补机器人关键技术",
-      "agency": "粤桂联合基金 · 重点项目",
+      "agency": "Guangdong–Guangxi Joint Research Fund · Key Program",
       "dates": "Dec. 2020 – Nov. 2024",
-      "role": "Project Participant（合作单位负责人）",
-      "note": "Robotic repair of protective layers on ultra-long cables of large-span bridges."
+      "role": "Project Participant (Lead Investigator at the Partner Institution)",
+      "note": "Robotic repair of protective layers on ultra-long cables of large-span bridges"
     },
     {
       "title": "人工智能管道检测机器人关键技术",
-      "agency": "深圳市创新创业计划 · 技术攻关面上项目",
+      "agency": "Shenzhen Innovation and Entrepreneurship Program · General Technology R&D Project",
       "dates": "Jan. 2022 – Dec. 2023",
-      "role": "Project Participant（合作单位负责人）",
-      "note": "BeiDou-enabled intelligent pipeline inspection robots."
+      "role": "Project Participant (Lead Investigator at the Partner Institution)",
+      "note": "BeiDou-enabled intelligent pipeline inspection robots"
     }
   ]
 }
