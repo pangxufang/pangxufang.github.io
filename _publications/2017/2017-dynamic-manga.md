@@ -1,7 +1,7 @@
 ---
 title: "DynamicManga: Animating Still Manga via Camera Movement"
 date: 2017-01-01
-selected: false
+selected: true
 pub: "IEEE Transactions on Multimedia"
 pub_date: "2017"
 abstract: "A data-driven method for extracting manga elements and inferring camera movement to animate still manga pages."
