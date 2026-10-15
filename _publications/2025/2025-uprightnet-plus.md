@@ -17,6 +17,7 @@ authors:
 - Wenxi Liu
 - Bo Jiang
 links:
+  "PDF (IEEE, access may be required)": https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11146921
   Code: https://gitlab.com/open-source7452523/uprightnet-plus
   Paper: https://doi.org/10.1109/TVCG.2025.3605201
   Project: /projects/uprightnet.html

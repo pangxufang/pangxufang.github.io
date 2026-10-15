@@ -12,4 +12,7 @@ authors:
 - Zhan Song
 - Yangyan Li
 - Shengfeng He
+links:
+  "PDF": https://www.cs.cityu.edu.hk/~rynson/papers/cga14.pdf
+  "Paper": https://doi.org/10.1109/MCG.2014.83
 ---

@@ -13,6 +13,7 @@ authors:
 - "Ning Ding#"
 - "Xiaopin Zhong#"
 links:
+  "PDF": https://openaccess.thecvf.com/content/CVPR2022/papers/Pang_Upright-Net_Learning_Upright_Orientation_for_3D_Point_Cloud_CVPR_2022_paper.pdf
   Code: https://gitlab.com/open-source7452523/uprightnet
   Paper: https://openaccess.thecvf.com/content/CVPR2022/html/Pang_Upright-Net_Learning_Upright_Orientation_for_3D_Point_Cloud_CVPR_2022_paper.html
   Project: /projects/uprightnet.html

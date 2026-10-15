@@ -10,4 +10,7 @@ authors:
 - Xufang Pang
 - Mingyong Pang
 - Chunxia Xiao
+links:
+  "PDF": https://www.aas.net.cn/cn/article/pdf/preview/10.3724/SP.J.1004.2010.01073.pdf
+  "Paper": https://doi.org/10.3724/SP.J.1004.2010.01073
 ---

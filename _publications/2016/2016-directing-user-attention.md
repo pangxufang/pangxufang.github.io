@@ -12,7 +12,7 @@ authors:
 - Rynson W.H. Lau
 - Antoni B. Chan
 links:
-  PDF: http://mmgroup.cs.cityu.edu.hk/projects/visualflow/downloads/visualflow_paper.pdf
+  PDF: https://www.cs.cityu.edu.hk/~rynson/papers/siga16.pdf
   Paper: https://doi.org/10.1145/2980179.2982426
   Project: /projects/directing-user-attention.html
 ---

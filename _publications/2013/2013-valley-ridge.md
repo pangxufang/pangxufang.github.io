@@ -10,4 +10,7 @@ authors:
 - Xufang Pang
 - Zhan Song
 - Wuyuan Xie
+links:
+  "PDF (IEEE, access may be required)": https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6392175
+  "Paper": https://doi.org/10.1109/MCG.2012.128
 ---

@@ -10,4 +10,7 @@ authors:
 - Xufang Pang
 - Zhan Song
 - Rynson W.H. Lau
+links:
+  "PDF (author download page)": https://www.researchgate.net/publication/259340119_AN_EFFECTIVE_QUAD-DOMINANT_MESHING_METHOD_FOR_UNORGANIZED_POINT_CLOUDS
+  "Paper": https://doi.org/10.1016/j.gmod.2013.11.004
 ---
