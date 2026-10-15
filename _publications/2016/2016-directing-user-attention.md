@@ -5,7 +5,7 @@ selected: true
 pub: "ACM Transactions on Graphics (Proc. SIGGRAPH Asia)"
 pub_date: "2016"
 abstract: "An attention-guided optimization framework that modifies web designs to direct a user's gaze along a designer-specified path."
-cover: /assets/images/publications/webpage_3.png
+cover: /assets/images/publications/directing-user-attention-graphical-abstract.png
 authors:
 - "Xufang Pang*"
 - "Ying Cao*"
