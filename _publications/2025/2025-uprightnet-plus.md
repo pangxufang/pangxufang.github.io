@@ -8,10 +8,10 @@ abstract: >-
   Upright-Net+ estimates upright orientation in 3D point clouds by learning the points that constitute an object's natural base.
 cover: /assets/images/publications/20251223172336_orig.png
 authors:
-- Xufang Pang
+- "Xufang Pang*"
 - Feng Li
 - Hongjie Zhuang
-- Ning Ding
+- "Ning Ding*"
 - Xiaopin Zhong
 - Shengfeng He
 - Wenxi Liu
