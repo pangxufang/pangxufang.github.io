@@ -150,8 +150,3 @@ div.lazy {
         transition: none;
     }
 }
-
-/* Mirror the profile portrait on desktop and mobile. */
-.profile-portrait {
-    transform: scaleX(-1);
-}
