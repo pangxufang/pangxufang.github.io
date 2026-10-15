@@ -5,7 +5,7 @@ selected: true
 pub: "IEEE Computer Graphics and Applications"
 pub_date: "2014"
 abstract: "An automatic method for recovering the rotation axis of a turntable-based 3D scanner from a scan sequence."
-cover: /assets/images/publications/turntable-calibration.png
+cover: /assets/images/publications/turntable-calibration-graphical-abstract.svg
 authors:
 - Xufang Pang
 - Rynson W.H. Lau
