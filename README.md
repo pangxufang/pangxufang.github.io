@@ -1,3 +1,22 @@
+# Xufang PANG · 庞旭芳 — Academic Homepage
+
+This Jekyll site contains Xufang PANG’s profile, publications, research projects, and CV.
+Content is transcribed from the supplied saved Weebly pages. Existing information not covered by those pages is retained, including the current affiliation, research biography, portrait, news, blog, and showcase.
+
+## Maintaining this site
+
+- Profile, education, experience, awards: `_data/profile.yml`.
+- Publications: `_publications/<year>/*.md`; project details: `projects/`.
+- Curriculum vitae: `cv.html`; navigation: `_data/navigation.yml`.
+- Run `bundle install`, then `bundle exec jekyll serve` to preview.
+- The current Git remote is `https://github.com/pangxufang/.github.io.git`, so `_config.yml` uses `url: https://pangxufang.github.io` and `baseurl: /.github.io`. If published with standard project Pages settings, the site path is `https://pangxufang.github.io/.github.io/`.
+- If the repository is renamed to `pangxufang.github.io` for a root personal site, set `baseurl: ""`. A local folder name does not determine the published URL.
+- Source pages disagree about the calibration paper’s year (publication page: 2014; CV: 2016). Its existing 2014 entry is retained pending confirmation. The Upright-Net+ title and author spelling follow the project page’s full citation.
+
+The original template documentation and setup guidance are preserved below.
+
+---
+
 # academic-homepage
 
 [!\[Preview](assets/images/etc/preview.png)](https://luost26.github.io/academic-homepage/)

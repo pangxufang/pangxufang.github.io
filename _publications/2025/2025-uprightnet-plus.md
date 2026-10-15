@@ -1,5 +1,5 @@
 ---
-title: "Upright-Net+: Enhanced Learning Upright Orientation for 3D Point Cloud"
+title: "Upright-Net+: Enhanced Learning of Upright Orientation for 3D Point Clouds"
 date: 2025-12-01
 selected: true
 pub: "IEEE Transactions on Visualization and Computer Graphics"
@@ -17,6 +17,7 @@ authors:
 - Wenxi Liu
 - Bo Jiang
 links:
+  Code: https://gitlab.com/open-source7452523/uprightnet-plus
   Paper: https://doi.org/10.1109/TVCG.2025.3605201
   Project: /projects/uprightnet.html
 ---

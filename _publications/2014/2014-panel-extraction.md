@@ -11,4 +11,6 @@ authors:
 - Ying Cao
 - Rynson W.H. Lau
 - Antoni B. Chan
+links:
+  Code: http://personal.cs.cityu.edu.hk/~xpang4/Code/PanelExtractionCode.rar
 ---

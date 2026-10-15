@@ -1,5 +1,5 @@
 ---
-title: "Extracting Valley-Ridge Lines from Point-Cloud-Based 3D Fingerprint Model"
+title: "Extracting Valley-Ridge Lines from Point-Cloud-Based 3D Fingerprint Models"
 date: 2013-01-01
 selected: false
 pub: "IEEE Computer Graphics and Applications"
@@ -8,6 +8,6 @@ abstract: "A point-cloud-based method for extracting valley-ridge features from 
 cover: /assets/images/publications/8782284.png
 authors:
 - Xufang Pang
-- Zhangdong
+- Zhan Song
 - Wuyuan Xie
 ---

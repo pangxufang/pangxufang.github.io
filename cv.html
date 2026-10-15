@@ -1,0 +1,38 @@
+---
+layout: default
+title: Curriculum Vitae
+navbar_title: CV
+---
+<div class="card border-0 shadow-sm bg-white">
+  <div class="card-body p-4 p-md-5">
+    <h1 class="h3">Xufang PANG · 庞旭芳</h1>
+    <p><a href="mailto:pangxufang@gmail.com">pangxufang@gmail.com</a></p>
+    <h2 class="h5 mt-4">Contact Address</h2>
+    <p>Building 106, Phase 4, Longgang City, Longhai 3rd Road,<br>Dayawan West District, Huiyang District, Huizhou City,<br>Guangdong Province, P.R. China.</p>
+    <h2 class="h5 mt-4">Research Interests</h2>
+    <p>Computer Graphics, Machine Learning, Digital Geometry Processing.</p>
+    <h2 class="h5 mt-4">Education</h2>
+    <p>Ph.D. in Computer Science, City University of Hong Kong, Aug. 2018.<br>
+    Thesis: Computational Design: Attention-Driven Web Design and Structural Packaging Design.<br>
+    Advisors: Rynson W.H. Lau and Antoni B. Chan.</p>
+    <h2 class="h5 mt-4">Experience</h2>
+    <ul>
+      {% for item in site.data.profile.experience %}
+      <li>{{ item.position }} · {{ item.name }} ({{ item.date }})</li>
+      {% endfor %}
+    </ul>
+    <p>Research assistant supervisors: Rynson W.H. Lau and Antoni B. Chan.<br>
+    Engineer and internship supervisor: Zhan Song. Engineering work focused on 3D scanning systems and point cloud processing.</p>
+    <h2 class="h5 mt-4">Honors &amp; Awards</h2>
+    <ul>{% for item in site.data.profile.awards %}<li>{{ item.name }} ({{ item.date }})</li>{% endfor %}</ul>
+    <p>The Jiangsu postgraduate innovation project (CX09S-009R) studied extraction and enhancement of features on point cloud data.</p>
+    <h2 class="h5 mt-4">Presentations</h2>
+    <ul><li>SIGGRAPH Asia 2016, Macao, Dec. 2016</li><li>CVPR 2022</li></ul>
+    <h2 class="h5 mt-4">Teaching Experience</h2>
+    <p>Teaching Assistant, 2014–2017.<br>Tutorial Instructor in Computer Graphics, Summer B, 2016/2017.</p>
+    <h2 class="h5 mt-4">Programming</h2>
+    <p>C, C++, OpenGL, Matlab, ASP, JavaScript, HTML.</p>
+    <h2 class="h5 mt-4">Publications</h2>
+    <p><a href="{{ '/publications' | relative_url }}">View the publication list</a></p>
+  </div>
+</div>

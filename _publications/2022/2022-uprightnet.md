@@ -8,11 +8,12 @@ abstract: >-
   Upright-Net reformulates continuous upright-orientation estimation as a discrete classification problem for robust 3D point-cloud shape analysis.
 cover: /assets/images/publications/cvpr.png
 authors:
-- Xufang Pang
-- Feng Li
-- Ning Ding
-- Xiaopin Zhong
+- "Xufang Pang*"
+- "Feng Li*"
+- "Ning Ding#"
+- "Xiaopin Zhong#"
 links:
+  Code: https://gitlab.com/open-source7452523/uprightnet
   Paper: https://openaccess.thecvf.com/content/CVPR2022/html/Pang_Upright-Net_Learning_Upright_Orientation_for_3D_Point_Cloud_CVPR_2022_paper.html
   Project: /projects/uprightnet.html
 ---

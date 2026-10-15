@@ -1,11 +1,12 @@
 primary_name: "Xufang PANG"
-secondary_name: ""
+secondary_name: "庞旭芳"
 navbar_name: "Xufang PANG"
 positions:
 - name: Associate Research Fellow
 - name: Shenzhen Institute of Artificial Intelligence and Robotics for Society (AIRS)
   position: The Chinese University of Hong Kong, Shenzhen
 email: "pangxufang@gmail.com"
+cv_link: /cv.html
 short_bio_text_justify: false
 short_bio: >-
   <p>I am an Associate Research Fellow at the Shenzhen Institute of Artificial Intelligence and Robotics for Society (AIRS), The Chinese University of Hong Kong, Shenzhen.</p>
@@ -17,6 +18,7 @@ education:
 - name: City University of Hong Kong
   position: Ph.D. in Computer Science
   date: Aug. 2018
+  dept: "Thesis: Computational Design: Attention-Driven Web Design and Structural Packaging Design"
 experience:
 - name: Shenzhen Institute of Artificial Intelligence and Robotics for Society (AIRS), CUHKSZ
   position: Associate Research Fellow
@@ -37,3 +39,5 @@ awards:
   date: 2014 - 2017
 - name: Outstanding Master's Thesis, Nanjing Normal University
   date: 2011
+- name: Innovation Plan for University Postgraduates in Jiangsu Province of China (CX09S-009R)
+  date: 2009/10

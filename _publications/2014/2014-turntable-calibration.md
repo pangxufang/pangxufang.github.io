@@ -9,7 +9,7 @@ cover: /assets/images/publications/5288831.png
 authors:
 - Xufang Pang
 - Rynson W.H. Lau
-- Zhangdong
+- Zhan Song
 - Yangyan Li
 - Shengfeng He
 ---
