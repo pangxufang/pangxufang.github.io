@@ -124,3 +124,11 @@ If you run into **any** issues while using this template, or have suggestions fo
 2. Go to the repository settings and enable GitHub Pages. Detailed instructions can be found [here](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-your-site).
 3. Navigate to your created website, and follow the instructions displayed on the homepage (if any) to finalize the setup.
 
+
+## Google Scholar publication import (2026-10-15)
+
+The supplied profile (`y8ZC-4MAAAAJ`) contained 35 records. Nine existing papers were retained; 19 dated papers and two undated manuscripts were added. Two patent records, the panel-extraction toolbox, a journal back-cover image, and supplementary material were excluded from the research-paper list. The two undated records appear under a separate manuscripts section without an invented publication year. Existing issue/online-year differences are preserved.
+
+Imported metadata and source detail IDs are recorded in `_data/scholar_publication_sources.json`. Author names are normalized to consistent full-name spelling. New records retain the existing paper-card and three-format Citation interface. Publisher PDF endpoints can require institutional access; the prosthetic-vision paper links to the author copy indexed by Scholar, and highlight removal links to its preprint. The 2010 adaptive up-sampling paper currently links to the journal's full-text page because a direct PDF was not verified.
+
+VideoSketcher uses the matching official repository's `assets/figure1.png` (https://github.com/lihuining/VideoSketcher). Other newly imported records use a clearly marked neutral graphical-abstract placeholder pending replacement with paper-specific figures. New papers are not automatically selected for the homepage.

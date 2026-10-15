@@ -39,7 +39,7 @@ navbar_title: Home V2
 </section>
 
 <section id="selected-publications" aria-label="Selected publications">
-  {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
+  {% assign pubs = site.publications | where: "selected", true | sort: "date" | reverse %}
   {% include widgets/publication_card.html publications=pubs title='Selected Publications' %}
 </section>
 
