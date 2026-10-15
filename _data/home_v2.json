@@ -19,43 +19,38 @@
   ],
   "grants": [
     {
-      "title": "基于单帧空间编码和光度测量的动态三维扫描关键技术研究",
+      "title": "动态三维扫描关键技术研究",
       "agency": "国家自然科学基金委员会 · 青年科学基金项目",
-      "number": "62106155",
       "dates": "Jan. 2022 – Dec. 2024",
       "role": "Principal Investigator",
-      "note": "Dynamic 3D scanning using single-frame spatial coding and photometric measurement."
+      "note": "Dynamic 3D scanning"
     },
     {
-      "title": "视觉感知机制驱动的三维通用表征学习方法研究",
+      "title": "三维通用表征学习方法研究",
       "agency": "广东省自然科学基金 · 面上项目",
-      "number": "2023A1515012570",
       "dates": "Jan. 2023 – Dec. 2025",
       "role": "Principal Investigator",
       "note": "Visual-perception-driven general 3D representation learning."
     },
     {
-      "title": "工程机械类重载移动机器人关键技术研发及示范应用",
+      "title": "重载移动机器人关键技术研发",
       "agency": "深圳市科技创新委员会 · 科技重大专项",
-      "number": "KJZD20230923114810022 · 重202303N192",
       "dates": "Jan. 2024 – Dec. 2026",
-      "role": "Project Participant",
-      "note": "Key technologies and demonstration of heavy-duty mobile robots for construction machinery."
+      "role": "Project Participant（合作单位负责人）",
+      "note": "Key technologies of heavy-duty mobile robots for construction machinery."
     },
     {
-      "title": "大跨度桥梁超长缆索保护层修补机器人关键技术研究",
+      "title": "桥梁缆索修补机器人关键技术",
       "agency": "粤桂联合基金 · 重点项目",
-      "number": "2021B1515420005",
       "dates": "Dec. 2020 – Nov. 2024",
-      "role": "Project Participant",
+      "role": "Project Participant（合作单位负责人）",
       "note": "Robotic repair of protective layers on ultra-long cables of large-span bridges."
     },
     {
-      "title": "基于北斗系统的人工智能管道检测机器人关键技术研发",
+      "title": "人工智能管道检测机器人关键技术",
       "agency": "深圳市创新创业计划 · 技术攻关面上项目",
-      "number": "JSGG20210802152801004 · 重2022258",
       "dates": "Jan. 2022 – Dec. 2023",
-      "role": "Project Participant",
+      "role": "Project Participant（合作单位负责人）",
       "note": "BeiDou-enabled intelligent pipeline inspection robots."
     }
   ]

@@ -40,12 +40,10 @@ navbar_title: Home V2
     <h2 class="h5 mb-3">Research Grants</h2>
     {% for grant in site.data.home_v2.grants %}
     <article class="{% unless forloop.last %}border-bottom pb-3 mb-3{% endunless %}">
-      <div class="d-flex flex-wrap justify-content-between align-items-baseline">
-        <h3 class="h6 mb-1 mr-3">{{ grant.title }}</h3>
-        <span class="badge badge-light mb-2">{{ grant.role }}</span>
-      </div>
+      <h3 class="h6 mb-2">{{ grant.title }}</h3>
+      <p class="small font-weight-bold mb-2">{{ grant.role }}</p>
       <p class="small mb-1">{{ grant.note }}</p>
-      <p class="small text-muted mb-0">{{ grant.agency }}<br>{{ grant.number }} · {{ grant.dates }}</p>
+      <p class="small text-muted mb-0">{{ grant.agency }}<br>{{ grant.dates }}</p>
     </article>
     {% endfor %}
   </div>
