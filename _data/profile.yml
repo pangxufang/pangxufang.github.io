@@ -6,6 +6,7 @@ positions:
 - name: Shenzhen Institute of Artificial Intelligence and Robotics for Society (AIRS)
 - name: The Chinese University of Hong Kong (Shenzhen)
 email: "pangxufang@gmail.com"
+email_display: "pangxufang{at}gmail{doc}com"
 cv_link: /cv.html
 short_bio_text_justify: false
 short_bio: >-
