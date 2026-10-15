@@ -10,7 +10,7 @@ navbar_title: Home V2
   <a class="mr-3" href="#research">Research</a>
   <a class="mr-3" href="#selected-publications">Publications</a>
   <a class="mr-3" href="#grants">Grants</a>
-  <a class="mr-3" href="#experience">Experience &amp; Honors</a>
+  <a class="mr-3" href="#honors">Honors &amp; Awards</a>
   <a class="mr-3" href="#industry">Technology Translation &amp; Innovation Awards</a>
   <a href="#service">Academic Service</a>
 </nav>
@@ -54,8 +54,15 @@ navbar_title: Home V2
   </div>
 </section>
 
-<section id="experience" aria-label="Education, experience and honors">
-  {% include widgets/experience_card.html profile=site.data.profile_v2 %}
+<section id="honors" class="card border-0 shadow-sm bg-white mt-3" aria-labelledby="honors-title">
+  <div class="card-body p-4">
+    <h2 class="h5 mb-3" id="honors-title">Honors &amp; Awards</h2>
+    <ul class="mb-0 pl-3">
+      {% for item in site.data.profile_v2.awards %}
+      <li>{{ item.name }}{% if item.date != "" %} <span class="text-muted">({{ item.date }})</span>{% endif %}</li>
+      {% endfor %}
+    </ul>
+  </div>
 </section>
 
 <section id="industry" class="card border-0 shadow-sm bg-white mt-3">
@@ -101,14 +108,11 @@ navbar_title: Home V2
   </div>
 </section>
 
-<section id="page-views" class="card border-0 shadow-sm bg-white mt-3" aria-labelledby="page-views-title">
-  <div class="card-body px-4 py-3 d-flex flex-wrap align-items-center justify-content-between">
-    <div class="mr-3 my-1">
-      <h2 class="h6 mb-1" id="page-views-title"><i class="far fa-eye text-primary mr-2" aria-hidden="true"></i>Page Views</h2>
-      <p class="small text-muted mb-0">Home V2 visits since this counter was enabled.</p>
-    </div>
-    <a class="my-2" href="https://hits.sh/pangxufang.github.io/homeV2.html/" target="_blank" rel="noopener noreferrer" aria-label="View Home V2 visit statistics">
-      <img src="https://hits.sh/pangxufang.github.io/homeV2.html.svg?view=total&amp;style=flat&amp;label=views&amp;color=007bff&amp;labelColor=6c757d" alt="Home V2 page view count" height="20" referrerpolicy="no-referrer">
-    </a>
+<section id="page-views" class="site-counter" aria-label="Total website page views">
+  <div class="site-counter-shell" title="Total views across this website since counter activation">
+    <span class="site-counter-label">PAGE VIEWS</span>
+    <span class="site-counter-wheels" role="img" aria-label="Loading website page views">
+      <span class="site-counter-pending">— — — — — —</span>
+    </span>
   </div>
 </section>

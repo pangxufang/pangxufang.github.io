@@ -150,3 +150,14 @@ div.lazy {
         transition: none;
     }
 }
+/* Small champagne-gold mechanical counter, exclusive to Home V2. */
+.site-counter { display: flex; justify-content: center; margin: 32px 0 12px; }
+.site-counter-shell { text-align: center; padding: 9px 12px 10px; border: 1px solid #bda36a; border-radius: 7px; background: linear-gradient(135deg, #f5eddc, #e4d4af 48%, #f8f1e4); box-shadow: 0 2px 7px #57452314, inset 0 1px #fff9; }
+.site-counter-label { display: block; margin-bottom: 5px; color: #89703e; font: 8px/1.2 Arial, sans-serif; letter-spacing: 2px; }
+.site-counter-wheels { display: flex; gap: 2px; justify-content: center; }
+.site-counter-wheel { position: relative; display: block; overflow: hidden; width: 17px; height: 24px; border-radius: 2px; background: linear-gradient(#302a21, #171511 48%, #302a21); box-shadow: inset 0 1px 3px #0009; }
+.site-counter-wheel::after { content: ''; position: absolute; inset: 0; background: linear-gradient(transparent 47%, #0008 49%, #e0c38226 52%, transparent 55%); pointer-events: none; }
+.site-counter-reel { display: block; transition: transform 1.4s cubic-bezier(.22,.7,.2,1); }
+.site-counter-reel > span { display: block; height: 24px; color: #e4c582; text-shadow: 0 1px 1px #000; font: 17px/24px Georgia, serif; font-variant-numeric: tabular-nums; }
+.site-counter-pending { color: #89703e; font: 12px/24px Georgia, serif; }
+@media (prefers-reduced-motion: reduce) { .site-counter-reel { transition: none; } }
