@@ -5,7 +5,7 @@ selected: false
 pub: "IEEE Computer Graphics and Applications"
 pub_date: "2013"
 abstract: "A point-cloud-based method for extracting valley-ridge features from 3D fingerprint models."
-cover: /assets/images/publications/8782284.png
+cover: /assets/images/publications/2013-fingerprint-valley-ridge.png
 authors:
 - Xufang Pang
 - Zhan Song

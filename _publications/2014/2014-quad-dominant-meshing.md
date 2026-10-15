@@ -5,7 +5,7 @@ selected: false
 pub: "Graphical Models"
 pub_date: "2014"
 abstract: "A quad-dominant meshing method for unorganized point clouds."
-cover: /assets/images/publications/3460937.png
+cover: /assets/images/publications/2014-quad-dominant-meshing.png
 authors:
 - Xufang Pang
 - Zhan Song

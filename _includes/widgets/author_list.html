@@ -48,7 +48,7 @@
 {%- endfor -%}
 
 {%- if has_eq_contrib or has_corresponding %}
-<mark>(
+<mark>
     {%- if has_eq_contrib -%}
         * <i> equal contribution</i>
     {%- endif -%}
@@ -56,5 +56,5 @@
         {%- if has_eq_contrib -%}, {% endif -%}
         <sup>#</sup> <i> corresponding author</i>
     {%- endif -%}
-)</mark>
+</mark>
 {%- endif -%}

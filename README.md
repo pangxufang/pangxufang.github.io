@@ -7,6 +7,7 @@ Content is transcribed from the supplied saved Weebly pages. Existing informatio
 
 - Profile, education, experience, awards: `_data/profile.yml`.
 - Publications: `_publications/<year>/*.md`; project details: `projects/`.
+- Paper covers follow the saved publication page: Upright-Net → `fast-forward.png`; calibration → `_1418476575.png`; quad meshing → `5288831.png`; 3D fingerprint → `3460937.png`; 2010 valley/ridge → `8782284.png`. Published copies use descriptive filenames without leading underscores.
 - Citation popups: `_data/citations.json` stores BibTeX, APA and IEEE text keyed by the exact publication title. Update this data when adding or renaming papers. The calibration paper citation uses its final journal year (2016); the existing publication-list year is retained.
 - Manga project resources are linked from the authors’ City University of Hong Kong pages and Ying Cao’s original project page. DynamicManga has no verified public code link; panel extraction links to the author-hosted RAR archive.
 - Every publication has a PDF resource: open author/publisher PDFs where verified; the fingerprint and Upright-Net+ papers use IEEE PDF viewers (access may be required), and quad-dominant meshing uses the author-uploaded ResearchGate download page (sign-in/security checks may apply). Publisher DOI links remain separate from downloads.

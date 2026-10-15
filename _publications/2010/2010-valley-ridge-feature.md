@@ -5,7 +5,7 @@ selected: false
 pub: "Acta Automatica Sinica"
 pub_date: "2010"
 abstract: "An algorithm for extracting and enhancing valley-ridge features from point-set data."
-cover: /assets/images/publications/2010-valley-ridge-features.png
+cover: /assets/images/publications/2010-valley-ridge-extraction.png
 authors:
 - Xufang Pang
 - Mingyong Pang
