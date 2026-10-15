@@ -1,0 +1,26 @@
+[
+  {
+    "id": "airs-neurips-2023",
+    "date": "2023-12-05",
+    "title": "NeurIPS 2023 Paper Sharing Session",
+    "series": "AIRS in the AIR · Session 62",
+    "role": "Moderator",
+    "speakers": "Shaokui Wei, Ziheng Sun, and Yue Lin — The Chinese University of Hong Kong (Shenzhen)",
+    "summary": "Talks on backdoor mitigation, unsupervised graph representation learning, and information design in multi-agent reinforcement learning.",
+    "news": "Moderated the AIRS in the AIR NeurIPS 2023 Paper Sharing Session, featuring talks on backdoor mitigation, graph representation learning, and multi-agent reinforcement learning.",
+    "official_url": "https://airs.cuhk.edu.cn/event/1113",
+    "video_url": "https://www.bilibili.com/video/BV1e94y177Dj/"
+  },
+  {
+    "id": "airs-reliable-machine-learning-2023",
+    "date": "2023-11-28",
+    "title": "Entropic Regularization for Reliable Machine Learning",
+    "series": "AIRS in the AIR · Session 61",
+    "role": "Moderator",
+    "speakers": "Jie Wang — Georgia Institute of Technology",
+    "summary": "A seminar on reliable machine learning, model robustness, and entropic regularization for distributionally robust optimization.",
+    "news": "Moderated the AIRS in the AIR seminar “Entropic Regularization for Reliable Machine Learning,” presented by Jie Wang from Georgia Tech.",
+    "official_url": "https://airs.cuhk.edu.cn/event/1112",
+    "video_url": "https://www.bilibili.com/video/BV1YQ4y1x7LC/"
+  }
+]

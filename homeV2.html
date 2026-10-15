@@ -8,6 +8,7 @@ navbar_title: Home V2
 <nav class="my-3 small" aria-label="Homepage sections">
   <a class="mr-3" href="#bio">Bio</a>
   <a class="mr-3" href="#research">Research</a>
+  <a class="mr-3" href="#news">News</a>
   <a class="mr-3" href="#selected-publications">Publications</a>
   <a class="mr-3" href="#grants">Grants</a>
   <a class="mr-3" href="#honors">Honors &amp; Awards</a>
@@ -35,6 +36,22 @@ navbar_title: Home V2
       {% endfor %}
     </div>
     <p class="mb-0">Across these directions, I study multi-scale geometric perception, dynamic scene modeling, object-level interaction representations, and physical attribute inference. The goal is to provide high-quality 3D data and spatial intelligence for fine manipulation, embodied learning, interactive simulation, and world modeling.</p>
+  </div>
+</section>
+
+<section id="news" class="card border-0 shadow-sm bg-white mt-3" aria-labelledby="news-title">
+  <div class="card-body p-4">
+    <h2 class="h5 mb-3" id="news-title">News</h2>
+    {% assign recent_seminars = site.data.seminars | sort: 'date' | reverse | slice: 0, 5 %}
+    <ul class="list-unstyled mb-0 small">
+      {% for event in recent_seminars %}
+      <li class="{% unless forloop.last %}mb-3{% endunless %}">
+        <time class="text-muted mr-2" datetime="{{ event.date }}">{{ event.date | date: '%b. %Y' }}</time>
+        {{ event.news }}
+        <a href="{{ '/showcase' | relative_url }}#{{ event.id }}" aria-label="Details for {{ event.title | escape }}">Details &amp; recording</a>
+      </li>
+      {% endfor %}
+    </ul>
   </div>
 </section>
 
@@ -95,6 +112,7 @@ navbar_title: Home V2
         <ul>
           <li>Reviewer: CVPR, ECCV, ICCV, ICLR, ACM Multimedia</li>
           <li>Program Committee Member: AAAI</li>
+          <li>Seminar Moderator: AIRS in the AIR — <a href="{{ '/showcase' | relative_url }}#airs-reliable-machine-learning-2023">Entropic Regularization for Reliable Machine Learning</a>; <a href="{{ '/showcase' | relative_url }}#airs-neurips-2023">NeurIPS 2023 Paper Sharing Session</a> (2023).</li>
         </ul>
       </div>
       <div class="col-md-6">
