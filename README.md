@@ -3,6 +3,10 @@
 This Jekyll site contains Xufang PANG’s profile, publications, research projects, and CV.
 Content is transcribed from the supplied saved Weebly pages. Existing information not covered by those pages is retained, including the current affiliation, research biography, portrait, news, blog, and showcase.
 
+## Home V2 preview
+
+`homeV2.html` is an alternative homepage; the original `index.html` and profile data remain intact. Edit `_data/profile_v2.json` and `_data/home_v2.json` to maintain the preview. Shared profile and experience widgets accept an optional `profile` argument. V2 omits template news. Grant dates are shown without asserting current status or unspecified funding attribution. Talent titles use the supplied Chinese names; company name, exact employment dates, award years, and grant closeout status remain to be confirmed. The NSFC project heading is a descriptive rendering of the supplied title and should be checked against the award notice before formal use.
+
 ## Maintaining this site
 
 - Profile, education, experience, awards: `_data/profile.yml`.
