@@ -12,8 +12,8 @@ short_bio: >-
   <p>I am an Associate Research Fellow at the Shenzhen Institute of Artificial Intelligence and Robotics for Society (AIRS), The Chinese University of Hong Kong, Shenzhen.</p>
   <p>I received my Ph.D. in Computer Science from the City University of Hong Kong, under the supervision of Prof. <a href="http://www.cs.cityu.edu.hk/~rynson/" target="_blank">Rynson W.H. Lau</a> and Prof. <a href="http://www.cs.cityu.edu.hk/~abchan/" target="_blank">Antoni B. Chan</a>.</p>
   <p>My research focuses on high-precision 3D perception for robotic dexterous manipulation, wide field-of-view 3D sensing for embodied intelligence in dynamic and unstructured environments, and vision-driven multimodal perception and representation learning.</p>
-portrait_url: /assets/images/photos/portrait.jpg
-portrait_caption: ""
+portrait_url: /assets/images/photos/xufang-pang.png
+portrait_caption: "Xufang PANG · 庞旭芳"
 education:
 - name: City University of Hong Kong
   position: Ph.D. in Computer Science
