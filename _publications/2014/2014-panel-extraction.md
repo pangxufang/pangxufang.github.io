@@ -12,5 +12,8 @@ authors:
 - Rynson W.H. Lau
 - Antoni B. Chan
 links:
-  Code: http://personal.cs.cityu.edu.hk/~xpang4/Code/PanelExtractionCode.rar
+  PDF: https://www.cs.cityu.edu.hk/~rynson/papers/mm14a.pdf
+  Paper: https://doi.org/10.1145/2647868.2654990
+  Project: /projects/panel-extraction.html
+  Code: https://www.cs.cityu.edu.hk/~rynson/papers/demos/PanelExtractionCode.rar
 ---

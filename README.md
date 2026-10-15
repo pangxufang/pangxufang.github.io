@@ -7,6 +7,7 @@ Content is transcribed from the supplied saved Weebly pages. Existing informatio
 
 - Profile, education, experience, awards: `_data/profile.yml`.
 - Publications: `_publications/<year>/*.md`; project details: `projects/`.
+- Manga project resources are linked from the authors’ City University of Hong Kong pages and Ying Cao’s original project page. DynamicManga has no verified public code link; panel extraction links to the author-hosted RAR archive.
 - Curriculum vitae: `cv.html`; navigation: `_data/navigation.yml`.
 - Run `bundle install`, then `bundle exec jekyll serve` to preview.
 - The personal-site repository is `pangxufang/pangxufang.github.io`; the Git remote is `https://github.com/pangxufang/pangxufang.github.io.git`.
