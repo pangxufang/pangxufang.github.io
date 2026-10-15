@@ -132,3 +132,7 @@ The supplied profile (`y8ZC-4MAAAAJ`) contained 35 records. Nine existing papers
 Imported metadata and source detail IDs are recorded in `_data/scholar_publication_sources.json`. Author names are normalized to consistent full-name spelling. New records retain the existing paper-card and three-format Citation interface. Publisher PDF endpoints can require institutional access; the prosthetic-vision paper links to the author copy indexed by Scholar, and highlight removal links to its preprint. The 2010 adaptive up-sampling paper currently links to the journal's full-text page because a direct PDF was not verified.
 
 VideoSketcher uses the matching official repository's `assets/figure1.png` (https://github.com/lihuining/VideoSketcher). Other newly imported records use a clearly marked neutral graphical-abstract placeholder pending replacement with paper-specific figures. New papers are not automatically selected for the homepage.
+
+## Home V2 page-view counter
+
+Home V2 includes a Hits (https://github.com/silentsoft/hits) counter scoped to `pangxufang.github.io/homeV2.html`. It counts page views from activation onward, not unique visitors or historic traffic. The counter is a remote SVG badge, with no extra analytics script, and only appears on Home V2. The badge's statistics link opens the provider's dashboard; caching, blocking, and provider availability can affect the displayed count. Keep the counter key stable when adjusting badge styling.
