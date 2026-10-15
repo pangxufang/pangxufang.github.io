@@ -39,6 +39,7 @@
                             {% endfor %}
                         </div>
                         <div class="text-profile-bio mt-3" {% if profile.short_bio_text_justify %}style="text-align: justify;"{% endif %}>
+                            {% if include.bio_title %}<h2 class="h5">{{ include.bio_title }}</h2>{% endif %}
                             {{ profile.short_bio }}
                         </div>
                         {% if profile.cv_link %}
