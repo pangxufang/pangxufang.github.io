@@ -14,5 +14,5 @@ authors:
 links:
   PDF: https://www.cs.cityu.edu.hk/~rynson/papers/tmm16b.pdf
   Project: /projects/dynamic-manga.html
-  Paper: https://doi.org/10.1109/TMM.2016.2610420
+  Paper: https://doi.org/10.1109/TMM.2016.2609415
 ---

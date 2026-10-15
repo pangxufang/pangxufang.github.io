@@ -22,6 +22,7 @@
                 <a target="_blank" href="{{ link[1] | relative_url }}">[{{ link[0] }}]</a>
                 {% endif %}
                 {% endfor %}
+            <button type="button" class="btn btn-link p-0 align-baseline citation-trigger" style="font-size: inherit;" data-citation-key="{{ item.title | escape }}" aria-haspopup="dialog">[Citation]</button>
             </p>
 
         </div>
@@ -46,6 +47,7 @@
                     <a target="_blank" href="{{ link[1] | relative_url }}">[{{ link[0] }}]</a>
                     {% endif %}
                     {% endfor %}
+                <button type="button" class="btn btn-link p-0 align-baseline citation-trigger" style="font-size: inherit;" data-citation-key="{{ item.title | escape }}" aria-haspopup="dialog">[Citation]</button>
                 </p>
             </div>
         </div>

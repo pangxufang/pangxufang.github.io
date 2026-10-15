@@ -1,0 +1,47 @@
+{
+  "An Algorithm for Extracting and Enhancing Valley-Ridge Features from Point Sets": {
+    "BibTeX": "@article{Pang2010ridgefeature,\n  author = {Pang, Xufang and Pang, Mingyong and Xiao, Chunxia},\n  title = {{An Algorithm for Extracting and Enhancing Valley-Ridge Features from Point Sets}},\n  journal = {Acta Automatica Sinica},\n  year = {2010},\n  volume = {36},\n  number = {8},\n  pages = {1073--1083},\n  doi = {10.3724/SP.J.1004.2010.01073},\n  url = {https://doi.org/10.3724/SP.J.1004.2010.01073}\n}",
+    "APA": "Pang, X., Pang, M., & Xiao, C. (2010). An Algorithm for Extracting and Enhancing Valley-Ridge Features from Point Sets. Acta Automatica Sinica, 36(8), 1073–1083. https://doi.org/10.3724/SP.J.1004.2010.01073",
+    "IEEE": "X. Pang, M. Pang, and C. Xiao, “An Algorithm for Extracting and Enhancing Valley-Ridge Features from Point Sets,” Acta Automatica Sinica, vol. 36, no. 8, pp. 1073–1083, 2010. doi: 10.3724/SP.J.1004.2010.01073."
+  },
+  "Extracting Valley-Ridge Lines from Point-Cloud-Based 3D Fingerprint Models": {
+    "BibTeX": "@article{Pang2013ridge,\n  author = {Pang, Xufang and Song, Zhan and Xie, Wuyuan},\n  title = {{Extracting Valley-Ridge Lines from Point-Cloud-Based 3D Fingerprint Models}},\n  journal = {IEEE Computer Graphics and Applications},\n  year = {2013},\n  volume = {33},\n  number = {4},\n  pages = {73--81},\n  doi = {10.1109/MCG.2012.128},\n  url = {https://doi.org/10.1109/MCG.2012.128}\n}",
+    "APA": "Pang, X., Song, Z., & Xie, W. (2013). Extracting Valley-Ridge Lines from Point-Cloud-Based 3D Fingerprint Models. IEEE Computer Graphics and Applications, 33(4), 73–81. https://doi.org/10.1109/MCG.2012.128",
+    "IEEE": "X. Pang, Z. Song, and W. Xie, “Extracting Valley-Ridge Lines from Point-Cloud-Based 3D Fingerprint Models,” IEEE Computer Graphics and Applications, vol. 33, no. 4, pp. 73–81, 2013. doi: 10.1109/MCG.2012.128."
+  },
+  "A Robust Panel Extraction Method for Manga": {
+    "BibTeX": "@inproceedings{Pang2014extraction,\n  author = {Pang, Xufang and Cao, Ying and Lau, Rynson W.H. and Chan, Antoni B.},\n  title = {{A Robust Panel Extraction Method for Manga}},\n  booktitle = {Proceedings of the 22nd ACM International Conference on Multimedia},\n  year = {2014},\n  pages = {1125--1128},\n  doi = {10.1145/2647868.2654990},\n  url = {https://doi.org/10.1145/2647868.2654990}\n}",
+    "APA": "Pang, X., Cao, Y., Lau, R. W. H., & Chan, A. B. (2014). A Robust Panel Extraction Method for Manga. In Proceedings of the 22nd ACM International Conference on Multimedia (pp. 1125–1128). https://doi.org/10.1145/2647868.2654990",
+    "IEEE": "X. Pang, Y. Cao, R. W. H. Lau, and A. B. Chan, “A Robust Panel Extraction Method for Manga,” in Proceedings of the 22nd ACM International Conference on Multimedia, pp. 1125–1128, 2014. doi: 10.1145/2647868.2654990."
+  },
+  "An Effective Quad-Dominant Meshing Method for Unorganized Point Clouds": {
+    "BibTeX": "@article{Pang2014dominantmeshing,\n  author = {Pang, Xufang and Song, Zhan and Lau, Rynson W.H.},\n  title = {{An Effective Quad-Dominant Meshing Method for Unorganized Point Clouds}},\n  journal = {Graphical Models},\n  year = {2014},\n  volume = {76},\n  number = {2},\n  pages = {86--102},\n  doi = {10.1016/j.gmod.2013.11.004},\n  url = {https://doi.org/10.1016/j.gmod.2013.11.004}\n}",
+    "APA": "Pang, X., Song, Z., & Lau, R. W. H. (2014). An Effective Quad-Dominant Meshing Method for Unorganized Point Clouds. Graphical Models, 76(2), 86–102. https://doi.org/10.1016/j.gmod.2013.11.004",
+    "IEEE": "X. Pang, Z. Song, and R. W. H. Lau, “An Effective Quad-Dominant Meshing Method for Unorganized Point Clouds,” Graphical Models, vol. 76, no. 2, pp. 86–102, 2014. doi: 10.1016/j.gmod.2013.11.004."
+  },
+  "A Tool-Free Calibration Method for Turntable-Based 3D Scanning Systems": {
+    "BibTeX": "@article{Pang2016calibration,\n  author = {Pang, Xufang and Lau, Rynson W.H. and Song, Zhan and Li, Yangyan and He, Shengfeng},\n  title = {{A Tool-Free Calibration Method for Turntable-Based 3D Scanning Systems}},\n  journal = {IEEE Computer Graphics and Applications},\n  year = {2016},\n  volume = {36},\n  number = {1},\n  pages = {52--61},\n  doi = {10.1109/MCG.2014.83},\n  url = {https://doi.org/10.1109/MCG.2014.83}\n}",
+    "APA": "Pang, X., Lau, R. W. H., Song, Z., Li, Y., & He, S. (2016). A Tool-Free Calibration Method for Turntable-Based 3D Scanning Systems. IEEE Computer Graphics and Applications, 36(1), 52–61. https://doi.org/10.1109/MCG.2014.83",
+    "IEEE": "X. Pang, R. W. H. Lau, Z. Song, Y. Li, and S. He, “A Tool-Free Calibration Method for Turntable-Based 3D Scanning Systems,” IEEE Computer Graphics and Applications, vol. 36, no. 1, pp. 52–61, 2016. doi: 10.1109/MCG.2014.83."
+  },
+  "Directing User Attention via Visual Flow on Web Designs": {
+    "BibTeX": "@article{Pang2016userattention,\n  author = {Pang, Xufang and Cao, Ying and Lau, Rynson W.H. and Chan, Antoni B.},\n  title = {{Directing User Attention via Visual Flow on Web Designs}},\n  journal = {ACM Transactions on Graphics},\n  year = {2016},\n  volume = {35},\n  number = {6},\n  pages = {240:1--240:11},\n  doi = {10.1145/2980179.2982422},\n  url = {https://doi.org/10.1145/2980179.2982422}\n}",
+    "APA": "Pang, X., Cao, Y., Lau, R. W. H., & Chan, A. B. (2016). Directing User Attention via Visual Flow on Web Designs. ACM Transactions on Graphics, 35(6), 240:1–240:11. https://doi.org/10.1145/2980179.2982422",
+    "IEEE": "X. Pang, Y. Cao, R. W. H. Lau, and A. B. Chan, “Directing User Attention via Visual Flow on Web Designs,” ACM Transactions on Graphics, vol. 35, no. 6, pp. 240:1–240:11, 2016. doi: 10.1145/2980179.2982422."
+  },
+  "DynamicManga: Animating Still Manga via Camera Movement": {
+    "BibTeX": "@article{Cao2017manga,\n  author = {Cao, Ying and Pang, Xufang and Chan, Antoni B. and Lau, Rynson W.H.},\n  title = {{DynamicManga: Animating Still Manga via Camera Movement}},\n  journal = {IEEE Transactions on Multimedia},\n  year = {2017},\n  volume = {19},\n  number = {1},\n  pages = {160--172},\n  doi = {10.1109/TMM.2016.2609415},\n  url = {https://doi.org/10.1109/TMM.2016.2609415}\n}",
+    "APA": "Cao, Y., Pang, X., Chan, A. B., & Lau, R. W. H. (2017). DynamicManga: Animating Still Manga via Camera Movement. IEEE Transactions on Multimedia, 19(1), 160–172. https://doi.org/10.1109/TMM.2016.2609415",
+    "IEEE": "Y. Cao, X. Pang, A. B. Chan, and R. W. H. Lau, “DynamicManga: Animating Still Manga via Camera Movement,” IEEE Transactions on Multimedia, vol. 19, no. 1, pp. 160–172, 2017. doi: 10.1109/TMM.2016.2609415."
+  },
+  "Upright-Net: Learning Upright Orientation for 3D Point Cloud": {
+    "BibTeX": "@inproceedings{Pang2022,\n  author = {Pang, Xufang and Li, Feng and Ding, Ning and Zhong, Xiaopin},\n  title = {{Upright-Net: Learning Upright Orientation for 3D Point Cloud}},\n  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},\n  year = {2022},\n  pages = {14911--14919},\n  url = {https://openaccess.thecvf.com/content/CVPR2022/html/Pang_Upright-Net_Learning_Upright_Orientation_for_3D_Point_Cloud_CVPR_2022_paper.html}\n}",
+    "APA": "Pang, X., Li, F., Ding, N., & Zhong, X. (2022). Upright-Net: Learning Upright Orientation for 3D Point Cloud. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (pp. 14911–14919). https://openaccess.thecvf.com/content/CVPR2022/html/Pang_Upright-Net_Learning_Upright_Orientation_for_3D_Point_Cloud_CVPR_2022_paper.html",
+    "IEEE": "X. Pang, F. Li, N. Ding, and X. Zhong, “Upright-Net: Learning Upright Orientation for 3D Point Cloud,” in Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, pp. 14911–14919, 2022."
+  },
+  "Upright-Net+: Enhanced Learning of Upright Orientation for 3D Point Clouds": {
+    "BibTeX": "@article{Pang2025plus,\n  author = {Pang, Xufang and Li, Feng and Zhuang, Hongjie and Ding, Ning and Zhong, Xiaopin and He, Shengfeng and Liu, Wenxi and Jiang, Bo},\n  title = {{Upright-Net+: Enhanced Learning of Upright Orientation for 3D Point Clouds}},\n  journal = {IEEE Transactions on Visualization and Computer Graphics},\n  year = {2025},\n  volume = {31},\n  number = {12},\n  pages = {10545--10560},\n  doi = {10.1109/TVCG.2025.3605201},\n  url = {https://doi.org/10.1109/TVCG.2025.3605201}\n}",
+    "APA": "Pang, X., Li, F., Zhuang, H., Ding, N., Zhong, X., He, S., Liu, W., & Jiang, B. (2025). Upright-Net+: Enhanced Learning of Upright Orientation for 3D Point Clouds. IEEE Transactions on Visualization and Computer Graphics, 31(12), 10545–10560. https://doi.org/10.1109/TVCG.2025.3605201",
+    "IEEE": "X. Pang, F. Li, H. Zhuang, N. Ding, X. Zhong, S. He, W. Liu, and B. Jiang, “Upright-Net+: Enhanced Learning of Upright Orientation for 3D Point Clouds,” IEEE Transactions on Visualization and Computer Graphics, vol. 31, no. 12, pp. 10545–10560, 2025. doi: 10.1109/TVCG.2025.3605201."
+  }
+}
