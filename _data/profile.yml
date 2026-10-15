@@ -4,7 +4,7 @@ navbar_name: "Xufang PANG"
 positions:
 - name: Associate Research Fellow
 - name: Shenzhen Institute of Artificial Intelligence and Robotics for Society (AIRS)
-  position: The Chinese University of Hong Kong, Shenzhen
+- name: The Chinese University of Hong Kong (Shenzhen)
 email: "pangxufang@gmail.com"
 cv_link: /cv.html
 short_bio_text_justify: false
