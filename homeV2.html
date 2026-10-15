@@ -3,9 +3,10 @@ layout: default
 title: Homepage V2
 navbar_title: Home V2
 ---
-{% include widgets/profile_card.html profile=site.data.profile_v2 bio_title="Bio" %}
+{% include widgets/profile_card.html profile=site.data.profile_v2 bio_title="About" %}
 
 <nav class="my-3 small" aria-label="Homepage sections">
+  <a class="mr-3" href="#bio">Bio</a>
   <a class="mr-3" href="#research">Research</a>
   <a class="mr-3" href="#selected-publications">Publications</a>
   <a class="mr-3" href="#grants">Grants</a>
@@ -13,6 +14,13 @@ navbar_title: Home V2
   <a class="mr-3" href="#industry">Technology Transfer</a>
   <a href="#service">Academic Service</a>
 </nav>
+
+<section id="bio" class="card border-0 shadow-sm bg-white mt-3">
+  <div class="card-body p-4">
+    <h2 class="h5 mb-3">Bio</h2>
+    <div class="text-profile-bio">{{ site.data.profile_v2.bio }}</div>
+  </div>
+</section>
 
 <section id="research" class="card border-0 shadow-sm bg-white mt-3">
   <div class="card-body p-4">
