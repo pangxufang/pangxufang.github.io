@@ -62,6 +62,18 @@ container_class: container-xl
     </div>
 </section>
 
+<section id="media-coverage" aria-labelledby="media-coverage-title" class="mb-4">
+    <h1 class="h3 mb-3" id="media-coverage-title">Media Coverage &amp; Interviews</h1>
+    <article id="jingbao-interview" class="card border-0 shadow-sm bg-white" style="scroll-margin-top: 6rem;">
+        <div class="card-body p-4">
+            <p class="small text-muted mb-2">Media interview · WeChat Channels</p>
+            <h2 class="h5">Interview with Jing Bao (晶报)</h2>
+            <p class="small text-muted">An interview with Xufang Pang by Jing Bao.</p>
+            <a class="small" href="https://channels.weixin.qq.com/finder-preview/pages/sph?id=AhZMXF9NOY" target="_blank" rel="noopener noreferrer"><i class="fas fa-play-circle" aria-hidden="true"></i> Watch on WeChat Channels</a>
+        </div>
+    </article>
+</section>
+
 {% assign cards_by_group = site.showcase | sort: "date" | reverse | where: "show", true | group_by_exp: "item", "item.group" %}
 
 {% for group in cards_by_group %}
