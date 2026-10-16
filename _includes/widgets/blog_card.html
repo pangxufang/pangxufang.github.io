@@ -12,7 +12,7 @@
                 </a>
             </h5>
             <div class="text-muted small mb-2">
-                <i class="fas fa-calendar-alt"></i> {{ item.date | date: "%B %d, %Y" }}
+                <i class="fas fa-calendar-alt"></i> {% if item.display_date %}{{ item.display_date }}{% else %}{{ item.date | date: "%B %d, %Y" }}{% endif %}
                 {% if item.tags %}
                     <span class="ml-3">
                         <i class="fas fa-tags"></i>

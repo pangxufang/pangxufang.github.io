@@ -16,14 +16,7 @@ canonical_path: /blog
         <h2 class="pt-4" id="year-{{ year.name }}">{{ year.name }}</h2>
         <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
             {% for item in year.items %}
-                {% if item.placeholder %}
-                <div class="p-4">
-                    <h3 class="h6 mb-2">{{ item.title }}</h3>
-                    <p class="small text-muted mb-0">{{ item.content | strip_html }}</p>
-                </div>
-                {% else %}
                 {% include widgets/blog_card.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
-                {% endif %}
             {% endfor %}
         </div>
         {% endfor %}
