@@ -17,6 +17,17 @@
                 stage.append(message);
                 return;
             }
+            if (items[index].video_url) {
+                const video = document.createElement('video');
+                video.src = items[index].video_url;
+                video.controls = true;
+                video.playsInline = true;
+                video.preload = 'metadata';
+                video.style.cssText = 'width:100%;height:100%;object-fit:contain;background:#111;';
+                video.setAttribute('aria-label', items[index].title);
+                stage.append(video);
+                return;
+            }
             const frame = document.createElement('iframe');
             frame.src = items[index].embed_url || 'https://giphy.com/embed/' + items[index].giphy_id;
             frame.title = items[index].title + ' — ' + (items[index].platform || 'GIPHY');
@@ -35,7 +46,7 @@
             source.href = item.source_url;
             source.textContent = 'Source: ' + item.creator + ' on ' + (item.platform || 'GIPHY') + ' ↗';
             gallery.querySelector('[data-moment-note]').textContent = item.media_type === 'video'
-                ? 'Video via LinkedIn. If the player is unavailable, open the source link. Commentary is my own.'
+                ? 'Video plays directly here; original post credited above. Commentary is my own.'
                 : 'GIF via GIPHY; captions are my own playful commentary.';
             gallery.querySelector('[data-moment-position]').textContent = (index + 1) + ' / ' + items.length;
             renderAnimation();
