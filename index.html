@@ -58,7 +58,7 @@ navbar_title: Home
     <h2 class="h5 mb-3">Research Grants</h2>
     {% for grant in site.data.home_v2.grants %}
     <article class="{% unless forloop.last %}border-bottom pb-3 mb-3{% endunless %}">
-      <p class="mb-0">{{ grant.note }}, <strong>{{ grant.role }}</strong>, {{ grant.agency }}, {{ grant.dates }}.</p>
+      <p class="mb-0">{{ grant.note }}, {% if grant.role %}<strong>{{ grant.role }}</strong>, {% endif %}{{ grant.agency }}, {{ grant.dates }}.</p>
     </article>
     {% endfor %}
   </div>
