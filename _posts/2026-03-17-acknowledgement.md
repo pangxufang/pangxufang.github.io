@@ -1,22 +1,13 @@
 ---
 layout: blog_post
-title: "The Robot Passed. The Mug Did Not."
+title: "Still in the mental drafts folder"
 date: 2026-03-17
-display_date: "2026 · A tech-year retrospective"
-excerpt: "My robot served coffee flawlessly in ten thousand simulated kitchens. In the real kitchen, it nudged the mug off the table. “Interesting,” it said. “Gravity has enabled production mode.”"
+display_date: "2026 · Not written yet"
+excerpt: "Plenty of ideas, zero blog posts so far. This space is saving a seat for the stories I have yet to write."
 tags:
-  - Tech Humor
-  - Physical AI
+  - Notes to Come
+sitemap: false
+noindex: true
 ---
 
-My robot served coffee flawlessly in ten thousand simulated kitchens.
-
-In the real kitchen, it nudged the mug off the table.
-
-“Interesting,” it said. “Gravity has enabled production mode.”
-
----
-
-*An original fictional joke inspired by the year’s technology themes.*
-
-Physical AI, world models, and transferring robot capabilities from simulation to real environments are active themes in 2026. [Background: NVIDIA: Physical AI models and next-generation robots](https://nvidianews.nvidia.com/news/nvidia-releases-new-physical-ai-models-as-global-partners-unveil-next-generation-robots).
+Plenty of ideas, zero blog posts so far. This space is saving a seat for the stories I have yet to write.
