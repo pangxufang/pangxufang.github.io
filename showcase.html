@@ -67,6 +67,28 @@ canonical_path: /showcase
     {% endfor %}
 </section>
 
+<section id="big-minds" aria-labelledby="big-minds-title" class="mb-4" style="scroll-margin-top: 6rem;">
+    <h1 class="h3 mb-2" id="big-minds-title">Big Minds, Bigger Ideas</h1>
+    <p class="small text-muted mb-3">Talks from leading minds in science and technology—bring your curiosity.</p>
+    <div class="row">
+        {% for talk in site.data.recommended_talks %}
+        <div class="col-md-6 col-xl-4 mb-3">
+            <article class="card border-0 shadow-sm bg-white h-100">
+                <a href="https://www.youtube.com/watch?v={{ talk.video_id }}" target="_blank" rel="noopener noreferrer" aria-label="Watch {{ talk.title | escape }} on YouTube">
+                    <img src="https://i.ytimg.com/vi/{{ talk.video_id }}/hqdefault.jpg" alt="Video preview for {{ talk.title | escape }}" class="w-100 rounded-xl-top" style="aspect-ratio: 16 / 9; object-fit: cover;" loading="lazy" referrerpolicy="no-referrer">
+                </a>
+                <div class="card-body p-4">
+                    <p class="small text-muted mb-2">Recommended viewing</p>
+                    <h2 class="h6">{{ talk.title }}</h2>
+                    {% if talk.speaker %}<p class="small text-muted">{{ talk.speaker }}</p>{% endif %}
+                    <a class="small" href="https://www.youtube.com/watch?v={{ talk.video_id }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-play-circle" aria-hidden="true"></i> Watch on YouTube</a>
+                </div>
+            </article>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
 {% assign cards_by_group = site.showcase | sort: "date" | reverse | where: "show", true | group_by_exp: "item", "item.group" %}
 
 {% for group in cards_by_group %}
