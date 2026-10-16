@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: "Xufang PANG · 庞旭芳"
-description: "Academic homepage of Xufang PANG: research, publications, projects, and curriculum vitae."
+description: "Xufang PANG (庞旭芳), Associate Research Fellow at AIRS. Research in robotic 3D perception, computer graphics, computer vision, spatial intelligence, and embodied world modeling. Publications, research videos, grants, and academic service."
 url: "https://pangxufang.github.io"
 baseurl: "" # Personal site hosted at https://pangxufang.github.io/
 

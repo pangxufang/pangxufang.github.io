@@ -1,0 +1,12 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{% for item in site.pages %}{% if item.layout == 'default' or item.layout == 'blog_post' %}{% unless item.sitemap == false or item.noindex or item.name == '404.html' %}
+  <url><loc>{{ item.canonical_path | default: item.url | replace: '/index.html', '/' | absolute_url | xml_escape }}</loc></url>
+{% endunless %}{% endif %}{% endfor %}
+{% for item in site.posts %}{% unless item.sitemap == false or item.noindex %}
+  <url><loc>{{ item.url | absolute_url | xml_escape }}</loc></url>
+{% endunless %}{% endfor %}
+</urlset>

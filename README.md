@@ -9,6 +9,12 @@ Content is transcribed from the supplied saved Weebly pages. Existing informatio
 
 ## Maintaining this site
 
+### Search discovery and homepage routing
+
+`index.html` is now the former Home V2 and is the official homepage. `/homeV2.html` redirects to `/`, preserving section fragments with JavaScript; the old homepage is retained at `/home-classic.html` with `noindex`. The legacy Layout 2 preview is also excluded from indexing. Update `index.html` for future homepage changes.
+
+`sitemap.xml` generates canonical URLs for public pages and posts, excluding redirects, archived previews, and 404. `robots.txt` allows crawling and advertises the sitemap. Shared `seo.html` adds canonical, description, social metadata and homepage Person/ProfilePage structured data. Search Console verification can be enabled by setting `google_site_verification` in `_config.yml` to the exact token from the owning Google account. Verify a URL-prefix property for `https://pangxufang.github.io/`, submit `https://pangxufang.github.io/sitemap.xml`, then inspect and request indexing for the homepage. No Google verification or indexing submission is implied by publishing these files.
+
 - Profile, education, experience, awards: `_data/profile.yml`.
 - Publications: `_publications/<year>/*.md`; project details: `projects/`.
 - Paper covers follow the saved publication page: Upright-Net → `fast-forward.png`; calibration → `_1418476575.png`; quad meshing → `5288831.png`; 3D fingerprint → `3460937.png`; 2010 valley/ridge → `8782284.png`. Published copies use descriptive filenames without leading underscores.
