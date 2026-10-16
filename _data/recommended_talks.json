@@ -1,7 +1,38 @@
 [
-  {"video_id": "UJmXKVxRLKc", "title": "Selected Talk 01"},
-  {"video_id": "4l7XHQWHzLA", "title": "Selected Talk 02"},
-  {"video_id": "y8NtMZ7VGmU", "title": "With Spatial Intelligence, AI Will Understand the Real World", "speaker": "Fei-Fei Li · TED"},
-  {"video_id": "2Bm_8hM8SYg", "title": "Selected Talk 04"},
-  {"video_id": "N5AQFYtqx8Q", "title": "Selected Talk 05"}
+  {
+    "video_id": "UJmXKVxRLKc",
+    "title": "Selected Talk 01",
+    "date": ""
+  },
+  {
+    "video_id": "4l7XHQWHzLA",
+    "title": "Selected Talk 02",
+    "date": ""
+  },
+  {
+    "video_id": "y8NtMZ7VGmU",
+    "title": "With Spatial Intelligence, AI Will Understand the Real World",
+    "speaker": "Fei-Fei Li · TED",
+    "date": "2024-05-16",
+    "date_source": "https://www.youtube.com/watch?v=y8NtMZ7VGmU"
+  },
+  {
+    "video_id": "2Bm_8hM8SYg",
+    "title": "Selected Talk 04",
+    "date": ""
+  },
+  {
+    "video_id": "N5AQFYtqx8Q",
+    "title": "Using AI to Increase Your Intelligence & Enrich Humanity",
+    "date": "2026-08-10",
+    "speaker": "Fei-Fei Li · Huberman Lab",
+    "date_source": "https://www.hubermanlab.com/episode/using-ai-to-increase-your-intelligence-and-enrich-humanity-fei-fei-li"
+  },
+  {
+    "video_id": "uD62Yn8j_Pg",
+    "title": "AMD Acquires Fei-Fei Li’s World Labs for $8.2 Billion",
+    "speaker": "Bloomberg Tech",
+    "date": "2026-09-28",
+    "date_source": "https://www.youtuberandom.com/tag/amd-stock-video-stats"
+  }
 ]

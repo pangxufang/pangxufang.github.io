@@ -68,17 +68,21 @@ canonical_path: /showcase
 </section>
 
 <section id="big-minds" aria-labelledby="big-minds-title" class="mb-4" style="scroll-margin-top: 6rem;">
-    <h1 class="h3 mb-2" id="big-minds-title">Big Minds, Bigger Ideas</h1>
+    <div class="d-flex align-items-center justify-content-between mb-2">
+        <h1 class="h3 mb-0 mr-3" id="big-minds-title">Big Minds, Bigger Ideas</h1>
+        <button type="button" class="btn btn-sm btn-outline-secondary flex-shrink-0" id="talks-toggle" aria-controls="talks-grid" aria-expanded="false" hidden>Show all (6) ↓</button>
+    </div>
     <p class="small text-muted mb-3">Talks from leading minds in science and technology—bring your curiosity.</p>
-    <div class="row">
-        {% for talk in site.data.recommended_talks %}
-        <div class="col-md-6 col-xl-4 mb-3">
+    <div id="talks-grid" class="talk-grid">
+        {% assign ordered_talks = site.data.recommended_talks | sort: 'date' | reverse %}
+        {% for talk in ordered_talks %}
+        <div class="talk-card">
             <article class="card border-0 shadow-sm bg-white h-100">
                 <a href="https://www.youtube.com/watch?v={{ talk.video_id }}" target="_blank" rel="noopener noreferrer" aria-label="Watch {{ talk.title | escape }} on YouTube">
                     <img src="https://i.ytimg.com/vi/{{ talk.video_id }}/hqdefault.jpg" alt="Video preview for {{ talk.title | escape }}" class="w-100 rounded-xl-top" style="aspect-ratio: 16 / 9; object-fit: cover;" loading="lazy" referrerpolicy="no-referrer">
                 </a>
                 <div class="card-body p-4">
-                    <p class="small text-muted mb-2">Recommended viewing</p>
+                    <p class="small text-muted mb-2">{% if talk.date != '' %}<time datetime="{{ talk.date }}">{{ talk.date | date: '%b. %d, %Y' }}</time>{% else %}Date to be confirmed{% endif %}</p>
                     <h2 class="h6">{{ talk.title }}</h2>
                     {% if talk.speaker %}<p class="small text-muted">{{ talk.speaker }}</p>{% endif %}
                     <a class="small" href="https://www.youtube.com/watch?v={{ talk.video_id }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-play-circle" aria-hidden="true"></i> Watch on YouTube</a>
@@ -88,6 +92,20 @@ canonical_path: /showcase
         {% endfor %}
     </div>
 </section>
+
+<style>
+#talks-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+#talks-grid.is-collapsed .talk-card:nth-child(n+4) { display: none; }
+@media (max-width: 1199px) {
+    #talks-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    #talks-grid.is-collapsed .talk-card:nth-child(n+3) { display: none; }
+}
+@media (max-width: 767px) {
+    #talks-grid { grid-template-columns: minmax(0, 1fr); }
+    #talks-grid.is-collapsed .talk-card:nth-child(n+2) { display: none; }
+}
+</style>
+<script defer src="{{ '/assets/js/recommended-talks.js' | relative_url }}"></script>
 
 {% assign cards_by_group = site.showcase | sort: "date" | reverse | where: "show", true | group_by_exp: "item", "item.group" %}
 
