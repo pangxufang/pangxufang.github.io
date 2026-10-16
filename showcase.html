@@ -70,7 +70,11 @@ canonical_path: /showcase
 <section id="big-minds" aria-labelledby="big-minds-title" class="mb-4" style="scroll-margin-top: 6rem;">
     <div class="d-flex align-items-center justify-content-between mb-2">
         <h1 class="h3 mb-0 mr-3" id="big-minds-title">Big Minds, Bigger Ideas</h1>
-        <button type="button" class="btn btn-sm btn-outline-secondary flex-shrink-0" id="talks-toggle" aria-controls="talks-grid" aria-expanded="false" hidden>Show all (6) ↓</button>
+        <div class="d-flex align-items-center flex-shrink-0" id="talks-controls" hidden>
+            <button type="button" class="btn btn-sm btn-outline-secondary" id="talks-prev" aria-controls="talks-grid" aria-label="Previous talks">←</button>
+            <span class="small text-muted mx-2" id="talks-position" aria-live="polite"></span>
+            <button type="button" class="btn btn-sm btn-outline-secondary" id="talks-next" aria-controls="talks-grid" aria-label="Next talks">→</button>
+        </div>
     </div>
     <p class="small text-muted mb-3">Talks from leading minds in science and technology—bring your curiosity.</p>
     <div id="talks-grid" class="talk-grid">
@@ -94,18 +98,17 @@ canonical_path: /showcase
 </section>
 
 <style>
-#talks-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
-#talks-grid.is-collapsed .talk-card:nth-child(n+4) { display: none; }
+#talks-grid { display: grid; grid-auto-flow: column; grid-auto-columns: calc((100% - 32px) / 3); gap: 16px; overflow-x: auto; }
+#talks-grid.is-paged { overflow: hidden; }
+#talks-grid .talk-card[hidden], #talks-controls[hidden] { display: none !important; }
 @media (max-width: 1199px) {
-    #talks-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    #talks-grid.is-collapsed .talk-card:nth-child(n+3) { display: none; }
+    #talks-grid { grid-auto-columns: calc((100% - 16px) / 2); }
 }
 @media (max-width: 767px) {
-    #talks-grid { grid-template-columns: minmax(0, 1fr); }
-    #talks-grid.is-collapsed .talk-card:nth-child(n+2) { display: none; }
+    #talks-grid { grid-auto-columns: 100%; }
 }
 </style>
-<script defer src="{{ '/assets/js/recommended-talks.js' | relative_url }}"></script>
+<script defer src="{{ '/assets/js/recommended-talks.js' | relative_url }}?v=arrows-1"></script>
 
 {% assign cards_by_group = site.showcase | sort: "date" | reverse | where: "show", true | group_by_exp: "item", "item.group" %}
 
