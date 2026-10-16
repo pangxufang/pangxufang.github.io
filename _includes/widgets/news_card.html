@@ -1,4 +1,9 @@
-{% assign news_by_year = site.news | sort: "date" | reverse | slice: 0, include.limit | group_by_exp: "item", "item.date | date: '%Y'" -%}
+{% if include.updates %}
+{% assign news_by_year = include.updates | sort: "date" | reverse | group_by_exp: "item", "item.date | slice: 0, 4" %}
+{% else %}
+{% assign news_by_year = site.news | sort: "date" | reverse | slice: 0, include.limit | group_by_exp: "item", "item.date | date: '%Y'" %}
+{% endif %}
+{% assign not_first = false %}
 
 <div class="my-3 bg-white shadow-sm rounded-xl">
     <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-rss"></i> News</h6>
@@ -10,8 +15,8 @@
             <div class="media-body">
                 {% for item in year.items %}
                 <div class="my-1 d-flex">
-                    <div>{{ item.title }}</div>
-                    <div class="ml-auto mt-auto text-muted no-break"><i>{{ item.date | date: "%b %d" }}</i></div>
+                    <div class="mr-2">{% if include.updates %}{{ item.news }} <a href="{{ '/showcase' | relative_url }}#{{ item.id }}" aria-label="Details for {{ item.title | escape }}">Details &amp; recording</a>{% else %}{{ item.title }}{% endif %}</div>
+                    <div class="ml-auto mt-auto text-muted no-break"><i>{% if include.updates and item.date.size == 4 %}Paper year{% else %}{{ item.date | date: "%b %d" }}{% endif %}</i></div>
                 </div>
                 {% endfor %}
             </div>

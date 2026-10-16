@@ -39,20 +39,9 @@ navbar_title: Home V2
   </div>
 </section>
 
-<section id="news" class="card border-0 shadow-sm bg-white mt-3" aria-labelledby="news-title">
-  <div class="card-body p-4">
-    <h2 class="h5 mb-3" id="news-title">News</h2>
-    {% assign recent_updates = site.data.seminars | concat: site.data.showcase_updates | sort: 'date' | reverse %}
-    <ul class="list-unstyled mb-0 small">
-      {% for event in recent_updates %}
-      <li class="{% unless forloop.last %}mb-3{% endunless %}">
-        {% if event.date_label %}<span class="text-muted mr-2">{{ event.date_label }}</span>{% else %}<time class="text-muted mr-2" datetime="{{ event.date }}">{{ event.date | date: '%b. %d, %Y' }}</time>{% endif %}
-        {{ event.news }}
-        <a href="{{ '/showcase' | relative_url }}#{{ event.id }}" aria-label="Details for {{ event.title | escape }}">Details &amp; recording</a>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
+<section id="news" aria-label="News">
+  {% assign recent_updates = site.data.seminars | concat: site.data.showcase_updates %}
+  {% include widgets/news_card.html updates=recent_updates %}
 </section>
 
 <section id="selected-publications" aria-label="Selected publications">
