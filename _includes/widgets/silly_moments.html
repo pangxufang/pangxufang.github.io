@@ -1,0 +1,25 @@
+<section id="silly-moments" class="p-4" data-silly-gallery aria-labelledby="silly-moments-title" style="scroll-margin-top: 6rem;">
+  <h2 class="h4" id="silly-moments-title">Serious Minds, Silly Moments</h2>
+  <p class="small text-muted mb-4">Science, economics, and business—occasionally defeated by reality.</p>
+  <div class="row align-items-center">
+    <div class="col-md-5 mb-4 mb-md-0" aria-live="polite" aria-atomic="true">
+      <span class="badge badge-light mb-2" data-moment-category></span>
+      <h3 class="h5" data-moment-title></h3>
+      <p data-moment-caption></p>
+      <p class="small text-muted" data-moment-explanation></p>
+      <a class="small" data-moment-source target="_blank" rel="noopener noreferrer"></a>
+      <p class="small text-muted mt-2 mb-0">GIF via GIPHY; captions are my own playful commentary.</p>
+    </div>
+    <div class="col-md-7">
+      <div class="rounded bg-light position-relative" style="height: 320px; overflow: hidden;" data-moment-stage></div>
+      <div class="d-flex align-items-center justify-content-between mt-3">
+        <button class="btn btn-sm btn-outline-secondary" type="button" data-moment-prev aria-label="Previous GIF">← Previous</button>
+        <span class="small text-muted" data-moment-position></span>
+        <button class="btn btn-sm btn-outline-secondary" type="button" data-moment-next aria-label="Next GIF">Next →</button>
+      </div>
+      <div class="text-center mt-2"><button class="btn btn-sm btn-link text-muted" type="button" data-moment-toggle>Hide animation</button></div>
+    </div>
+  </div>
+  <script type="application/json" data-moment-items>{{ site.data.silly_moments | jsonify }}</script>
+  <noscript><p class="small mt-3">Enable JavaScript to browse the GIF collection, or <a href="{{ site.data.silly_moments.first.source_url }}">view the first GIF on GIPHY</a>.</p></noscript>
+</section>
