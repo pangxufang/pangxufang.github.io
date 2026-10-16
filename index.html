@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Academic Homepage
+seo_title: "Xufang Pang (庞旭芳) | Robotic 3D Perception & 3D Sensing"
+description: "Xufang Pang (庞旭芳), Associate Research Fellow at AIRS, researches robotic 3D perception, high-precision 3D sensing, point cloud understanding, and spatial intelligence."
 navbar_title: Home
 ---
 {% include widgets/profile_card.html profile=site.data.profile_v2 %}
@@ -26,12 +28,14 @@ navbar_title: Home
 <section id="research" class="card border-0 shadow-sm bg-white mt-3">
   <div class="card-body p-4">
     <h2 class="h5 mb-3">Research Interests</h2>
-    <p>Robotic 3D perception, spatial intelligence, and embodied world modeling.</p>
+    <p>My research connects high-precision 3D sensing, geometric understanding, and spatial intelligence for robotics.</p>
     <div class="row">
       {% for topic in site.data.home_v2.research %}
-      <div class="col-md-6 mb-3">
+      <div class="col-lg-4 mb-3">
         <h3 class="h6">{{ topic.title }}</h3>
-        <p class="small text-muted mb-0">{{ topic.text }}</p>
+        <p class="small mb-2">{{ topic.text }}</p>
+        <p class="small text-muted mb-2">{{ topic.evidence }}</p>
+        <a class="small" href="{{ topic.url | relative_url }}">{{ topic.link_label }}</a>
       </div>
       {% endfor %}
     </div>

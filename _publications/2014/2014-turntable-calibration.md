@@ -4,7 +4,7 @@ date: 2014-01-01
 selected: true
 pub: "IEEE Computer Graphics and Applications"
 pub_date: "2014"
-abstract: "An automatic method for recovering the rotation axis of a turntable-based 3D scanner from a scan sequence."
+abstract: "Recovering a turntable's rotation axis from a scan sequence without a dedicated calibration tool, supporting turntable-based 3D scanning systems."
 cover: /assets/images/publications/turntable-calibration-scanning-setup.png
 authors:
 - Xufang Pang

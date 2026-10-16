@@ -18,7 +18,7 @@
   "portrait_url": "/assets/images/photos/xufang-pang.png",
   "portrait_caption": "Xufang PANG · 庞旭芳",
   "cv_link": "/cv.html",
-  "short_bio": "<p>My research focuses on robotic 3D perception, spatial intelligence, and embodied world modeling.</p>",
+  "short_bio": "<p>My research focuses on robotic 3D perception and spatial intelligence, with an emphasis on high-precision 3D sensing, point cloud understanding, and dynamic scene reconstruction. I develop geometry- and vision-based methods for precise robotic manipulation and embodied world modeling.</p>",
   "education": [
     {
       "name": "City University of Hong Kong",

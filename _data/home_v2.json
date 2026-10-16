@@ -1,20 +1,25 @@
 {
   "research": [
     {
-      "title": "High-precision 3D perception for dexterous manipulation",
-      "text": "Precise geometric perception and 3D vision guidance for fine robotic operations, including challenging surfaces and complex imaging conditions."
+      "title": "High-Precision 3D Sensing & Scanning",
+      "text": "Calibration and geometric processing for 3D scanning systems and 3D vision guidance under challenging surfaces and illumination.",
+      "evidence": "Research foundation: tool-free turntable calibration, point-cloud feature extraction, and industrial 3D vision R&D.",
+      "url": "/projects/3d-sensing.html",
+      "link_label": "3D sensing research & applications"
     },
     {
-      "title": "Wide-field dynamic 3D sensing and reconstruction",
-      "text": "Large-field-of-view sensing, multi-scale geometry, and spatiotemporal modeling of dynamic, unstructured environments."
+      "title": "3D Geometry Understanding & Spatial Representation",
+      "text": "Learning functional structure and orientation-aware representations from 3D point clouds.",
+      "evidence": "Representative work: Upright-Net (CVPR 2022) and Upright-Net+ (IEEE TVCG 2025), alongside valley-ridge feature and 3D fingerprint research.",
+      "url": "/projects/uprightnet.html",
+      "link_label": "Upright-Net & Upright-Net+"
     },
     {
-      "title": "Multimodal spatial perception and representation",
-      "text": "Structured scene representations that integrate geometry, semantics, motion, object interactions, and physical attributes."
-    },
-    {
-      "title": "Video-driven 3D scene generation and world modeling",
-      "text": "High-fidelity, interactive, physics-enhanced 3D scene assets for embodied learning, simulation, and physical world models."
+      "title": "Spatial Intelligence & World Modeling for Robotics",
+      "text": "Current research: dynamic scene reconstruction, multimodal spatial perception, object interactions, and physically informed 3D scene representations for robotic manipulation and embodied learning.",
+      "evidence": "Building on 3D-vision-guided robotic systems and research projects in dynamic 3D scanning and general 3D representation learning.",
+      "url": "/#grants",
+      "link_label": "Related research grants"
     }
   ],
   "grants": [

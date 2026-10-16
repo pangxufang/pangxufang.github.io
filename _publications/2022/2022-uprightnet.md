@@ -5,7 +5,7 @@ selected: true
 pub: "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)"
 pub_date: "2022"
 abstract: >-
-  Upright-Net reformulates continuous upright-orientation estimation as a discrete classification problem for robust 3D point-cloud shape analysis.
+  Learning an object's natural base to estimate upright orientation from 3D point clouds, reformulating continuous orientation estimation as point classification.
 cover: /assets/images/publications/uprightnet-2022-graphical-abstract.png
 authors:
 - "Xufang Pang*"
