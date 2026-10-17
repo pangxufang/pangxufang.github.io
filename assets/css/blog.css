@@ -19,13 +19,13 @@
 }
 
 .blog-content h1 {
-    font-size: 2rem;
+    font-size: 1.75rem;
     border-bottom: 2px solid #e9ecef;
     padding-bottom: 0.5rem;
 }
 
 .blog-content h2 {
-    font-size: 1.5rem;
+    font-size: 1.375rem;
     border-bottom: 1px solid #e9ecef;
     padding-bottom: 0.25rem;
 }
