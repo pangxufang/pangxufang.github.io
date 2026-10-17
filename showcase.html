@@ -202,3 +202,25 @@ canonical_path: /showcase
 .hidden-gift:is(:hover,:focus-visible) .gift-surprise { opacity:1; transform:translateY(-25px) scale(1); }
 @media(prefers-reduced-motion:reduce) { .gift-surprise { transition:none; } }
 </style>
+
+<style>
+/* Seven individually wrapped finds, retaining the shared opening animation. */
+.hidden-gift:nth-child(1) { --gift-paper:repeating-linear-gradient(135deg,#eed6a0 0 4px,#d5b771 4px 6px); --gift-lid:#ddc086; --gift-ribbon:#997331; }
+.hidden-gift:nth-child(2) { --gift-paper:radial-gradient(circle,#fff8 1px,transparent 1.5px) 0 0/7px 7px,#aaa1ce; --gift-lid:#c3b9e1; --gift-ribbon:#e5c680; }
+.hidden-gift:nth-child(3) { --gift-paper:repeating-linear-gradient(0deg,transparent 0 6px,#ffffff38 6px 7px),repeating-linear-gradient(90deg,transparent 0 6px,#ffffff38 6px 7px),#75a596; --gift-lid:#92b9aa; --gift-ribbon:#f0d29d; }
+.hidden-gift:nth-child(4) { --gift-paper:conic-gradient(#c9b798 25%,#f3ead7 0 50%,#c9b798 0 75%,#f3ead7 0) 0 0/10px 10px; --gift-lid:#e5dbc6; --gift-ribbon:#856f50; }
+.hidden-gift:nth-child(5) { --gift-paper:radial-gradient(circle,#eed58d 1px,transparent 1.5px) 1px 2px/9px 9px,#536881; --gift-lid:#71859c; --gift-ribbon:#d6b86a; }
+.hidden-gift:nth-child(6) { --gift-paper:repeating-linear-gradient(45deg,#d2a4a5 0 5px,#e9c4be 5px 8px); --gift-lid:#e3b5b0; --gift-ribbon:#a67d4b; }
+.hidden-gift:nth-child(7) { --gift-paper:radial-gradient(circle,transparent 2px,#f4dfbd99 2px 3px,transparent 3px) 0 0/10px 10px,#c79267; --gift-lid:#ddb58b; --gift-ribbon:#80583c; }
+.hidden-gift .gift-body { background:var(--gift-paper); }
+.hidden-gift .gift-body::after { background:var(--gift-ribbon); }
+.hidden-gift .gift-lid { background:var(--gift-lid); }
+.hidden-gift .gift-lid::before,.hidden-gift .gift-lid::after { border-color:var(--gift-ribbon); }
+.hidden-gift:nth-child(3) .gift-body { border-radius:2px 2px 7px 7px; }
+.hidden-gift:nth-child(5) .gift-art { transform:rotate(3deg); }
+.hidden-gift:nth-child(6) .gift-art { transform:rotate(-3deg); }
+.hidden-gift:is(:hover,:focus-visible) .gift-body { background:linear-gradient(130deg,#ed91ba,#a88bdb 55%,#79c8c3); }
+.hidden-gift:is(:hover,:focus-visible) .gift-body::after { background:#f8d078; }
+.hidden-gift:is(:hover,:focus-visible) .gift-lid { background:linear-gradient(120deg,#9bdcd3,#b4b5ed); }
+.hidden-gift:is(:hover,:focus-visible) .gift-lid::before,.hidden-gift:is(:hover,:focus-visible) .gift-lid::after { border-color:#e88ba6; }
+</style>
