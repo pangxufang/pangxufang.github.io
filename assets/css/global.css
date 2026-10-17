@@ -162,11 +162,12 @@ div.lazy {
 .site-counter-pending { color: #89703e; font: 12px/24px Georgia, serif; }
 @media (prefers-reduced-motion: reduce) { .site-counter-reel { transition: none; } }
 
-/* Language selector shares the counter's champagne case and mechanical reel. */
-.language-roller { display:inline-flex; padding:4px 5px; vertical-align:middle; text-decoration:none !important; }
-.language-roller-wheel { width:44px; }
-.language-roller-reel { transition:transform .35s cubic-bezier(.22,.7,.2,1); }
-.language-roller-reel > span { font:12px/24px Lato, "Microsoft YaHei", sans-serif; letter-spacing:1px; text-align:center; }
-.language-roller:hover .language-roller-reel, .language-roller:focus-visible .language-roller-reel { transform:translateY(-24px); }
-.language-roller:focus-visible { outline:2px solid #89703e; outline-offset:3px; }
-@media(prefers-reduced-motion:reduce) { .language-roller-reel { transition:none; } }
+/* Keep language links out of the navigation's flex sizing. */
+.navbar-language { position:absolute; left:100%; top:50%; transform:translateY(-50%); padding-left:10px; white-space:nowrap; font-size:11px; }
+.language-links a { text-decoration:none; }
+@media (min-width:576px) and (max-width:1250px) {
+  .navbar-language { top:100%; left:auto; right:0; transform:none; padding:2px 6px; background:rgba(255,255,255,.95); border-radius:0 0 4px 4px; }
+}
+@media (max-width:575px) {
+  .navbar-language { top:auto; bottom:8px; left:90px; transform:none; padding-left:0; }
+}

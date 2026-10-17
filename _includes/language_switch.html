@@ -1,7 +1,4 @@
 {% if page.navbar_title == 'Publications' %}{% assign en_url = '/publications' %}{% assign zh_url = '/zh/publications' %}{% else %}{% assign en_url = '/' %}{% assign zh_url = '/zh/' %}{% endif %}
-{% if page.lang == 'zh-CN' %}{% assign target_url = en_url %}{% assign target_label = 'EN' %}{% assign target_lang = 'en' %}{% assign target_description = 'Switch to English' %}{% else %}{% assign target_url = zh_url %}{% assign target_label = '中文' %}{% assign target_lang = 'zh-CN' %}{% assign target_description = '切换至中文版' %}{% endif %}
-<a class="language-roller site-counter-shell" href="{{ target_url | relative_url }}" data-language-switch lang="{{ target_lang }}" hreflang="{{ target_lang }}" aria-label="{{ target_description }}" title="{{ target_description }}">
-    <span class="site-counter-wheel language-roller-wheel" aria-hidden="true">
-        <span class="site-counter-reel language-roller-reel"><span>{{ target_label }}</span><span>{{ target_label }}</span></span>
-    </span>
-</a>
+<span class="language-links" aria-label="Language / 语言">
+  <a href="{{ en_url | relative_url }}" data-language-switch lang="en" hreflang="en" {% unless page.lang == 'zh-CN' %}aria-current="page" class="font-weight-bold"{% endunless %}>EN</a><span class="text-muted mx-1">/</span><a href="{{ zh_url | relative_url }}" data-language-switch lang="zh-CN" hreflang="zh-CN" {% if page.lang == 'zh-CN' %}aria-current="page" class="font-weight-bold"{% endif %}>中文</a>
+</span>

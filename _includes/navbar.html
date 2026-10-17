@@ -6,7 +6,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto position-relative">
                 {% for item in site.data.navigation.pages %}
                 <li class="nav-item {% if item.name == page.navbar_title or include.active_page == item.name %}active{% endif %}">
                     {% assign nav_url = item.url %}
@@ -15,6 +15,9 @@
                     <a class="nav-link" href="{{ nav_url | relative_url }}">{% if page.lang == 'zh-CN' and item.name == 'Home' %}主页{% else %}{{ item.name }}{% endif %}</a>
                 </li>
                 {% endfor %}
+                {% if page.navbar_title == 'Home' or page.navbar_title == 'Publications' %}
+                <li class="navbar-language">{% include language_switch.html %}</li>
+                {% endif %}
             </ul>
         </div>
     </div>
