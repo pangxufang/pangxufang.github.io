@@ -57,9 +57,9 @@ navbar_title: Home
 
 <section id="grants" class="card border-0 shadow-sm bg-white mt-3">
   <div class="card-body p-4">
-    <h2 class="h5 mb-3">科研项目</h2>
+    <h2 class="h5 mb-2">科研项目</h2>
     {% for grant in site.data.home_zh.grants %}
-    <article class="{% unless forloop.last %}border-bottom pb-3 mb-3{% endunless %}">
+    <article class="{% unless forloop.last %}border-bottom pb-2 mb-2{% endunless %}">
       <p class="mb-0">{{ grant.note }}, {% if grant.role %}<strong>{{ grant.role }}</strong>, {% endif %}{{ grant.agency }}, {{ grant.dates }}.</p>
     </article>
     {% endfor %}
