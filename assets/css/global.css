@@ -192,8 +192,3 @@ h6, .h6 { font-size:1rem; line-height:1.5; }
   h3, .h3, #silly-moments-title { font-size:1.25rem; }
   .display-4, .card-body .h1.font-weight-normal { font-size:1.75rem; }
 }
-
-.navbar-light .navbar-nav .nav-link.nav-opportunities { color:#a58136; font-weight:700; }
-.navbar-light .navbar-nav .nav-link.nav-opportunities:hover,
-.navbar-light .navbar-nav .active > .nav-link.nav-opportunities { color:#785a20; }
-.nav-opportunities:focus-visible { outline:2px solid #bda36a; outline-offset:2px; border-radius:3px; }
