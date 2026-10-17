@@ -1,0 +1,37 @@
+---
+layout: default
+title: Recruitment
+navbar_title: Recruitment
+permalink: /recruitment.html
+description: "Research internship opportunities in embedded AI, multimodal learning, 3D point clouds, and optics with Xufang Pang at AIRS."
+---
+<section class="card border-0 shadow-sm bg-white mb-3">
+  <div class="card-body p-4 p-md-5">
+    <h1 class="h3 mb-3">Recruitment</h1>
+    <p class="mb-0">Explore research internship opportunities at the Shenzhen Institute of Artificial Intelligence and Robotics for Society (AIRS). Work with us on problems at the intersection of AI, computer vision, and 3D sensing.</p>
+  </div>
+</section>
+<section class="card border-0 shadow-sm bg-white mb-3" aria-labelledby="internships-title">
+  <div class="card-body p-4">
+    <h2 class="h5 mb-3" id="internships-title">Internship Opportunities</h2>
+    <p class="text-muted">Hands-on research experience, professional development, and mentorship across the following areas.</p>
+    <div class="row">
+      {% for opportunity in site.data.recruitment %}
+      <div class="col-md-6 mb-3">
+        <article class="border rounded p-3 h-100">
+          <h3 class="h6 mb-3">{{ opportunity.title }}</h3>
+          <a class="small" href="{{ opportunity.url }}" target="_blank" rel="noopener noreferrer" aria-label="View {{ opportunity.title }} position on AIRS recruitment portal">Position details &amp; application <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+        </article>
+      </div>
+      {% endfor %}
+    </div>
+    <p class="small text-muted mb-0">Please refer to the AIRS recruitment portal for current availability, eligibility, and application details.</p>
+  </div>
+</section>
+<section class="card border-0 shadow-sm bg-white" aria-labelledby="full-time-title">
+  <div class="card-body p-4">
+    <h2 class="h5 mb-3" id="full-time-title">Full-time Positions</h2>
+    <p>Details will be posted here when available.</p>
+    <p class="mb-0">For recruitment enquiries, please contact <a href="mailto:pangxufang@gmail.com">pangxufang{at}gmail{dot}com</a>.</p>
+  </div>
+</section>
