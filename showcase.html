@@ -128,6 +128,10 @@ canonical_path: /showcase
         {% for item in group.items %}<div class="nature-card card border-0 shadow-sm bg-white">{{ item.content }}</div>{% endfor %}
     </div>
 </section>
+<div class="hidden-gifts d-flex justify-content-center mb-4" id="hidden-gifts">
+    <a class="hidden-gift" href="https://marketoonist.com/" target="_blank" rel="noopener noreferrer" aria-label="Open Marketoonist in a new tab"><i class="fas fa-gift" aria-hidden="true"></i></a>
+    <a class="hidden-gift" href="https://tomfishburne.com/speaking/" target="_blank" rel="noopener noreferrer" aria-label="Open Tom Fishburne talks in a new tab"><i class="fas fa-gift" aria-hidden="true"></i></a>
+</div>
 {% else %}
 {% if group.name != '' %}<h1 class="h3">{{ group.name }}</h1>{% endif %}
 <div class="row grid mb-4">
@@ -161,4 +165,13 @@ canonical_path: /showcase
 #nature-grid .nature-card[hidden], #nature-controls[hidden] { display: none !important; }
 #nature-grid img { display:block; width:100%; height:auto; aspect-ratio:3 / 1; object-fit:fill; }
 #nature-grid .nature-card:nth-child(2) img { object-fit:cover; object-position:center; }
+</style>
+
+<style>
+.hidden-gifts { gap:18px; padding:8px 0; }
+.hidden-gift { display:inline-flex; align-items:center; justify-content:center; width:48px; height:48px; color:#a18750; font-size:26px; border-radius:10px; transition:transform .2s,color .2s; }
+.hidden-gift:nth-child(2) { color:#7e8d83; }
+.hidden-gift:hover { color:#79602e; transform:translateY(-3px) rotate(-5deg); text-decoration:none; }
+.hidden-gift:focus-visible { outline:2px solid #bda36a; outline-offset:3px; }
+@media(prefers-reduced-motion:reduce) { .hidden-gift { transition:none; } .hidden-gift:hover { transform:none; } }
 </style>
