@@ -159,6 +159,5 @@ canonical_path: /showcase
 #nature-grid { display: grid; grid-auto-flow: column; grid-auto-columns: 100%; gap: 16px; overflow-x: auto; }
 #nature-grid.is-paged { overflow: hidden; }
 #nature-grid .nature-card[hidden], #nature-controls[hidden] { display: none !important; }
-#nature-grid img { height: 360px !important; }
-@media (max-width: 767px) { #nature-grid img { height: 260px !important; } }
+#nature-grid img { display:block; width:100%; height:auto; object-fit:contain; }
 </style>
