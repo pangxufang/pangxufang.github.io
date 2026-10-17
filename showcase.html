@@ -129,8 +129,9 @@ canonical_path: /showcase
     </div>
 </section>
 <div class="hidden-gifts d-flex justify-content-center mb-4" id="hidden-gifts">
-    <a class="hidden-gift" href="https://marketoonist.com/" target="_blank" rel="noopener noreferrer" aria-label="Open Marketoonist in a new tab"><i class="fas fa-gift" aria-hidden="true"></i></a>
-    <a class="hidden-gift" href="https://tomfishburne.com/speaking/" target="_blank" rel="noopener noreferrer" aria-label="Open Tom Fishburne talks in a new tab"><i class="fas fa-gift" aria-hidden="true"></i></a>
+    <a class="hidden-gift" href="https://marketoonist.com/" target="_blank" rel="noopener noreferrer" aria-label="Open Marketoonist in a new tab"><span class="gift-art" aria-hidden="true"><span class="gift-body"></span><span class="gift-lid"></span><span class="gift-dot" style="--dx:-28px;--dy:-24px;--dot-color:#ed7996;"></span><span class="gift-dot" style="--dx:-14px;--dy:-38px;--dot-color:#79b7e3;"></span><span class="gift-dot" style="--dx:8px;--dy:-42px;--dot-color:#e5b94e;"></span><span class="gift-dot" style="--dx:28px;--dy:-27px;--dot-color:#a18cda;"></span><span class="gift-dot" style="--dx:-34px;--dy:0px;--dot-color:#7bc7ab;"></span><span class="gift-dot" style="--dx:35px;--dy:2px;--dot-color:#ef9566;"></span><span class="gift-dot" style="--dx:-20px;--dy:20px;--dot-color:#c98fce;"></span><span class="gift-dot" style="--dx:22px;--dy:22px;--dot-color:#75bad1;"></span></span></a>
+    <a class="hidden-gift" href="https://tomfishburne.com/speaking/" target="_blank" rel="noopener noreferrer" aria-label="Open Tom Fishburne talks in a new tab"><span class="gift-art" aria-hidden="true"><span class="gift-body"></span><span class="gift-lid"></span><span class="gift-dot" style="--dx:-28px;--dy:-24px;--dot-color:#ed7996;"></span><span class="gift-dot" style="--dx:-14px;--dy:-38px;--dot-color:#79b7e3;"></span><span class="gift-dot" style="--dx:8px;--dy:-42px;--dot-color:#e5b94e;"></span><span class="gift-dot" style="--dx:28px;--dy:-27px;--dot-color:#a18cda;"></span><span class="gift-dot" style="--dx:-34px;--dy:0px;--dot-color:#7bc7ab;"></span><span class="gift-dot" style="--dx:35px;--dy:2px;--dot-color:#ef9566;"></span><span class="gift-dot" style="--dx:-20px;--dy:20px;--dot-color:#c98fce;"></span><span class="gift-dot" style="--dx:22px;--dy:22px;--dot-color:#75bad1;"></span></span></a>
+    <a class="hidden-gift" href="https://researchinprogress.tumblr.com/" target="_blank" rel="noopener noreferrer" aria-label="Open Research in Progress in a new tab"><span class="gift-art" aria-hidden="true"><span class="gift-body"></span><span class="gift-lid"></span><span class="gift-dot" style="--dx:-28px;--dy:-24px;--dot-color:#ed7996;"></span><span class="gift-dot" style="--dx:-14px;--dy:-38px;--dot-color:#79b7e3;"></span><span class="gift-dot" style="--dx:8px;--dy:-42px;--dot-color:#e5b94e;"></span><span class="gift-dot" style="--dx:28px;--dy:-27px;--dot-color:#a18cda;"></span><span class="gift-dot" style="--dx:-34px;--dy:0px;--dot-color:#7bc7ab;"></span><span class="gift-dot" style="--dx:35px;--dy:2px;--dot-color:#ef9566;"></span><span class="gift-dot" style="--dx:-20px;--dy:20px;--dot-color:#c98fce;"></span><span class="gift-dot" style="--dx:22px;--dy:22px;--dot-color:#75bad1;"></span></span></a>
 </div>
 {% else %}
 {% if group.name != '' %}<h1 class="h3">{{ group.name }}</h1>{% endif %}
@@ -168,10 +169,22 @@ canonical_path: /showcase
 </style>
 
 <style>
-.hidden-gifts { gap:18px; padding:8px 0; }
-.hidden-gift { display:inline-flex; align-items:center; justify-content:center; width:48px; height:48px; color:#a18750; font-size:26px; border-radius:10px; transition:transform .2s,color .2s; }
-.hidden-gift:nth-child(2) { color:#7e8d83; }
-.hidden-gift:hover { color:#79602e; transform:translateY(-3px) rotate(-5deg); text-decoration:none; }
+.hidden-gifts { gap:22px; padding:18px 0; }
+.hidden-gift { display:inline-flex; align-items:center; justify-content:center; width:52px; height:52px; border-radius:10px; text-decoration:none !important; }
+.gift-art { position:relative; display:block; width:32px; height:34px; }
+.gift-body { position:absolute; left:3px; bottom:0; width:26px; height:23px; border-radius:2px 2px 4px 4px; background:linear-gradient(120deg,#edd49a,#b99851); box-shadow:inset 0 1px #fff7,0 2px 3px #8b6b2520; transition:background .25s; }
+.gift-body::after { content:''; position:absolute; left:11px; width:5px; height:100%; background:#9c7936; }
+.gift-lid { position:absolute; left:0; top:8px; width:32px; height:8px; border-radius:2px; background:linear-gradient(120deg,#f3dfac,#c3a368); transform-origin:4px 7px; transition:transform .3s,background .25s; z-index:2; }
+.gift-lid::before,.gift-lid::after { content:''; position:absolute; top:-8px; width:12px; height:10px; border:3px solid #b58e44; border-radius:9px 9px 2px 9px; }
+.gift-lid::before { left:5px; transform:rotate(15deg); }
+.gift-lid::after { right:5px; transform:scaleX(-1) rotate(15deg); }
+.hidden-gift:is(:hover,:focus-visible) .gift-body { background:linear-gradient(130deg,#ed91ba,#a88bdb 55%,#79c8c3); }
+.hidden-gift:is(:hover,:focus-visible) .gift-body::after { background:#f8d078; }
+.hidden-gift:is(:hover,:focus-visible) .gift-lid { background:linear-gradient(120deg,#9bdcd3,#b4b5ed); transform:translate(-4px,-13px) rotate(-22deg); }
+.hidden-gift:is(:hover,:focus-visible) .gift-lid::before,.hidden-gift:is(:hover,:focus-visible) .gift-lid::after { border-color:#e88ba6; }
+.gift-dot { position:absolute; left:14px; top:12px; width:5px; height:5px; border-radius:50%; background:var(--dot-color); opacity:0; pointer-events:none; }
+.hidden-gift:is(:hover,:focus-visible) .gift-dot { animation:gift-confetti .9s ease-out forwards; }
+@keyframes gift-confetti { 0% { opacity:0; transform:translate(0,0) scale(.4); } 20% { opacity:1; } 75% { opacity:.9; } 100% { opacity:0; transform:translate(var(--dx),var(--dy)) scale(.7); } }
 .hidden-gift:focus-visible { outline:2px solid #bda36a; outline-offset:3px; }
-@media(prefers-reduced-motion:reduce) { .hidden-gift { transition:none; } .hidden-gift:hover { transform:none; } }
+@media(prefers-reduced-motion:reduce) { .gift-body,.gift-lid { transition:none; } .hidden-gift:is(:hover,:focus-visible) .gift-dot { animation:none; } }
 </style>
