@@ -1,5 +1,9 @@
 ---
 title: "An Algorithm for Extracting and Enhancing Valley-Ridge Features from Point Sets"
+language: zh-CN
+title_zh: "点云模型谷脊特征的提取与增强算法"
+pub_zh: "自动化学报"
+abstract_zh: "研究点云模型谷脊特征的提取与增强。"
 date: 2010-08-01
 selected: false
 pub: "Acta Automatica Sinica"

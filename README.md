@@ -9,6 +9,10 @@ Content is transcribed from the supplied saved Weebly pages. Existing informatio
 
 ## Maintaining this site
 
+### Homepage languages
+
+The English homepage is `/` (`index.html`); the Chinese homepage is `/zh/` (`home-zh.html`). Use `_data/profile_zh.json`, `_data/home_zh.json`, `_data/seminars_zh.json`, and `_data/showcase_updates_zh.json` for Chinese content. Update both language datasets when editing shared facts. The top-right EN / 中文 links preserve the current section. CV, Blog, Showcase and project pages remain English. `/zh/publications` uses the same publication collection: only records marked `language: zh-CN` use `title_zh`, `pub_zh`, and `abstract_zh`; English papers retain their original metadata, and citation keys are unchanged. The adaptive up-sampling paper's Chinese title is a translation of the existing English record pending verification of the journal's original wording.
+
 ### Search discovery and homepage routing
 
 `index.html` is now the former Home V2 and is the official homepage. `/homeV2.html` redirects to `/`, preserving section fragments with JavaScript; the old homepage is retained at `/home-classic.html` with `noindex`. The legacy Layout 2 preview is also excluded from indexing. Update `index.html` for future homepage changes.

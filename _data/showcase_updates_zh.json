@@ -1,0 +1,42 @@
+[
+  {
+    "id": "upright-net-video",
+    "category": "research-video",
+    "date": "2022-06-16",
+    "date_label": "Jun. 16, 2022",
+    "title": "Upright-Net: Learning Upright Orientation for 3D Point Cloud",
+    "news": "Upright-Net（CVPR 2022）研究介绍视频，由 AIRS 发布于哔哩哔哩。",
+    "venue": "CVPR 2022",
+    "summary": "Learning an object's natural base to estimate its upright orientation. Video published by AIRS (5 min 14 sec).",
+    "cover": "/assets/images/projects/20251223172303_orig.png",
+    "video_url": "https://www.bilibili.com/video/BV1yU4y1X79C/",
+    "platform": "Bilibili",
+    "project_url": "/projects/uprightnet.html"
+  },
+  {
+    "id": "directing-user-attention-video",
+    "category": "research-video",
+    "date": "2016",
+    "date_label": "2016 · Paper year",
+    "title": "Directing User Attention via Visual Flow on Web Designs",
+    "news": "通过视觉流引导网页设计中的用户注意力：研究介绍视频（ACM TOG / SIGGRAPH Asia 2016）。",
+    "venue": "ACM TOG / SIGGRAPH Asia 2016",
+    "summary": "Optimizing web designs to guide a viewer's gaze along a designer-specified path. Video linked from coauthor Ying Cao's project page. Listed by paper year; video upload date is unconfirmed.",
+    "cover": "/assets/images/publications/directing-user-attention-graphical-abstract.png",
+    "video_url": "https://www.youtube.com/watch?v=E-WDxScTccQ",
+    "platform": "YouTube",
+    "mp4_url": "https://ying-cao.com/projects/web_design_attention/files/video.mp4",
+    "project_url": "/projects/directing-user-attention.html"
+  },
+  {
+    "id": "jingbao-interview",
+    "category": "media",
+    "date": "2026-09-14",
+    "date_label": "Sep. 14, 2026",
+    "title": "Interview with Jing Bao (晶报)",
+    "news": "晶报采访，视频可在微信视频号观看。",
+    "summary": "An interview with Xufang Pang by Jing Bao.",
+    "video_url": "https://channels.weixin.qq.com/finder-preview/pages/sph?id=AhZMXF9NOY",
+    "platform": "WeChat Channels"
+  }
+]

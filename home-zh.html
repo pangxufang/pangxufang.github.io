@@ -1,0 +1,131 @@
+---
+layout: default
+title: 学术主页
+lang: zh-CN
+permalink: /zh/
+seo_title: "庞旭芳 Xufang Pang | 机器人三维感知与空间智能"
+description: "庞旭芳，深圳市人工智能与机器人研究院副研究员，研究机器人三维感知、高精度三维扫描、点云理解、空间智能与具身世界建模。"
+navbar_title: Home
+---
+{% include widgets/profile_card.html profile=site.data.profile_zh %}
+
+<nav class="my-3 small" aria-label="Homepage sections">
+  <a class="mr-3" href="#bio">个人简介</a>
+  <a class="mr-3" href="#research">研究方向</a>
+  <a class="mr-3" href="#news">最新动态</a>
+  <a class="mr-3" href="#selected-publications">论文发表</a>
+  <a class="mr-3" href="#grants">科研项目</a>
+  <a class="mr-3" href="#honors">荣誉与奖励</a>
+  <a class="mr-3" href="#industry">成果转化与创新奖励</a>
+  <a href="#service">学术服务</a>
+</nav>
+
+<section id="bio" class="card border-0 shadow-sm bg-white mt-3">
+  <div class="card-body p-4">
+    <h2 class="h5 mb-3">个人简介</h2>
+    <div class="text-profile-bio">{{ site.data.profile_zh.bio }}</div>
+  </div>
+</section>
+
+<section id="research" class="card border-0 shadow-sm bg-white mt-3">
+  <div class="card-body p-4">
+    <h2 class="h5 mb-3">研究方向</h2>
+    <p>我的研究围绕高精度三维感知、几何理解与机器人空间智能展开。</p>
+    <div class="row">
+      {% for topic in site.data.home_zh.research %}
+      <div class="col-lg-4 mb-3">
+        <h3 class="h6">{{ topic.title }}</h3>
+        <p class="small mb-2">{{ topic.text }}</p>
+        <p class="small text-muted mb-2">{{ topic.evidence }}</p>
+        <a class="small" href="{{ topic.url | relative_url }}">{{ topic.link_label }}</a>
+      </div>
+      {% endfor %}
+    </div>
+    <p class="mb-0">围绕多尺度三维几何感知、动态场景时空建模、对象级交互关系表征及物理属性推断等关键技术，构建融合几何、语义、运动、交互约束与物理属性的结构化三维场景表征，为机器人精细操作、具身智能学习、交互式仿真及物理世界模型构建提供高质量三维数据与空间智能技术支撑。</p>
+  </div>
+</section>
+
+<section id="news" aria-label="News">
+  {% assign recent_updates = site.data.seminars_zh | concat: site.data.showcase_updates_zh %}
+  {% include widgets/news_card.html updates=recent_updates %}
+</section>
+
+<section id="selected-publications" aria-label="Selected publications">
+  {% assign pubs = site.publications | where: "selected", true | sort: "date" | reverse %}
+  {% include widgets/publication_card.html publications=pubs title='代表性论文' %}
+</section>
+
+<section id="grants" class="card border-0 shadow-sm bg-white mt-3">
+  <div class="card-body p-4">
+    <h2 class="h5 mb-3">科研项目</h2>
+    {% for grant in site.data.home_zh.grants %}
+    <article class="{% unless forloop.last %}border-bottom pb-3 mb-3{% endunless %}">
+      <p class="mb-0">{{ grant.note }}, {% if grant.role %}<strong>{{ grant.role }}</strong>, {% endif %}{{ grant.agency }}, {{ grant.dates }}.</p>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section id="honors" class="card border-0 shadow-sm bg-white mt-3" aria-labelledby="honors-title">
+  <div class="card-body p-4">
+    <h2 class="h5 mb-3" id="honors-title">荣誉与奖励</h2>
+    <ul class="mb-0 pl-3">
+      {% for item in site.data.profile_zh.awards %}
+      <li>{{ item.name }}{% if item.date != "" %} <span class="text-muted">({{ item.date }})</span>{% endif %}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section id="industry" class="card border-0 shadow-sm bg-white mt-3">
+  <div class="card-body p-4">
+    <h2 class="h5 mb-3">成果转化与创新奖励</h2>
+    <article class="border-bottom pb-3 mb-3">
+      <h3 class="h6">1. 高速高清三维机器视觉技术研发与产业化</h3>
+      <ul class="mb-0">
+        <li>湖南省标志性创新产品奖</li>
+        <li>广东省“众创杯”创新创业大赛科技海归领航赛银奖</li>
+        <li>第十二届中国深圳创新创业大赛先进制造行业决赛企业组优秀奖</li>
+      </ul>
+    </article>
+    <article>
+      <h3 class="h6">2. 市政地下雨污管道智能检测与管网智慧运维系统</h3>
+      <ul class="mb-0">
+        <li>广东省“众创杯”创新创业大赛优胜奖</li>
+        <li>全国博士后创新创业大赛优胜奖</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section id="service" class="card border-0 shadow-sm bg-white mt-3">
+  <div class="card-body p-4">
+    <h2 class="h5 mb-3">学术服务与人才培养</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <h3 class="h6">学术服务</h3>
+        <ul>
+          <li>会议审稿人：CVPR、ECCV、ICCV、ICLR、ACM Multimedia</li>
+          <li>程序委员会委员：AAAI</li>
+          <li>讲座主持：AIRS in the AIR — <a href="{{ '/showcase' | relative_url }}#airs-reliable-machine-learning-2023">面向可靠机器学习的熵正则化</a>; <a href="{{ '/showcase' | relative_url }}#airs-neurips-2023">NeurIPS 2023 论文分享会</a> (2023).</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h3 class="h6">人才培养</h3>
+        <ul class="mb-0">
+          <li>香港中文大学（深圳）本科校外导师 <span class="text-muted">(2023–2025)</span></li>
+          <li>深圳大学校外研究生导师 <span class="text-muted">(2023–2028)</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="page-views" class="site-counter" aria-label="Total website page views">
+  <div class="site-counter-shell" title="Total views across this website since counter activation">
+    <span class="site-counter-label">网站访问量</span>
+    <span class="site-counter-wheels" role="img" aria-label="Loading website page views">
+      <span class="site-counter-pending">— — — — — —</span>
+    </span>
+  </div>
+</section>

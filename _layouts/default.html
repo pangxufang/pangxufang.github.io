@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ page.lang | default: 'en' }}">
 <!-- Template: https://github.com/luost26/academic-homepage -->
 <head>
     <meta charset="utf-8">
@@ -51,6 +51,7 @@
     <script src="{{ '/assets/js/bubble_visual_hash.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/semantic_scholar_citation_count.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/citations.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/language-switch.js' | relative_url }}"></script>
     {% include site_counter.html %}
 </body>
 </html>

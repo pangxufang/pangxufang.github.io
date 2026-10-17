@@ -6,7 +6,7 @@
 {% assign not_first = false %}
 
 <div class="my-3 bg-white shadow-sm rounded-xl">
-    <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-rss"></i> News</h6>
+    <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-rss"></i> {% if page.lang == 'zh-CN' %}最新动态{% else %}News{% endif %}</h6>
     <div class="px-3 pb-1 small">
         {% for year in news_by_year %}
         <div class="media py-1 {% if not_first -%}border-top border-gray{%- endif %}">
@@ -15,8 +15,8 @@
             <div class="media-body">
                 {% for item in year.items %}
                 <div class="my-1 d-flex">
-                    <div class="mr-2">{% if include.updates %}{{ item.news }} <a href="{{ '/showcase' | relative_url }}#{{ item.id }}" aria-label="Details for {{ item.title | escape }}">Details &amp; recording</a>{% else %}{{ item.title }}{% endif %}</div>
-                    <div class="ml-auto mt-auto text-muted no-break"><i>{% if include.updates and item.date.size == 4 %}Paper year{% else %}{{ item.date | date: "%b %d" }}{% endif %}</i></div>
+                    <div class="mr-2">{% if include.updates %}{{ item.news }} <a href="{{ '/showcase' | relative_url }}#{{ item.id }}" aria-label="Details for {{ item.title | escape }}">{% if page.lang == 'zh-CN' %}详情与视频{% else %}Details &amp; recording{% endif %}</a>{% else %}{{ item.title }}{% endif %}</div>
+                    <div class="ml-auto mt-auto text-muted no-break"><i>{% if include.updates and item.date.size == 4 %}{% if page.lang == 'zh-CN' %}论文年份{% else %}Paper year{% endif %}{% else %}{% if page.lang == 'zh-CN' %}{{ item.date | date: '%m月%d日' }}{% else %}{{ item.date | date: '%b %d' }}{% endif %}{% endif %}</i></div>
                 </div>
                 {% endfor %}
             </div>

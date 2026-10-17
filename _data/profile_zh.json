@@ -1,0 +1,79 @@
+{
+  "primary_name": "庞旭芳",
+  "secondary_name": "Xufang PANG",
+  "navbar_name": "Xufang PANG",
+  "positions": [
+    {
+      "name": "副研究员"
+    },
+    {
+      "name": "深圳市人工智能与机器人研究院（AIRS）"
+    },
+    {
+      "name": "香港中文大学（深圳）"
+    }
+  ],
+  "email": "pangxufang@gmail.com",
+  "email_display": "pangxufang{at}gmail{doc}com",
+  "portrait_url": "/assets/images/photos/xufang-pang.png",
+  "portrait_caption": "Xufang PANG · 庞旭芳",
+  "cv_link": "/cv.html",
+  "short_bio": "<p>主要从事机器人三维视觉感知、空间智能与具身世界建模研究，重点关注高精度三维感知、点云理解与动态场景重建，探索面向机器人精细操作的几何与视觉方法。</p>",
+  "education": [
+    {
+      "name": "City University of Hong Kong",
+      "position": "Ph.D. in Computer Science",
+      "date": "Aug. 2018",
+      "dept": "Thesis: Computational Design: Attention-Driven Web Design and Structural Packaging Design"
+    }
+  ],
+  "experience": [
+    {
+      "name": "Shenzhen Institute of Artificial Intelligence and Robotics for Society (AIRS)",
+      "position": "Associate Research Fellow",
+      "date": "Present"
+    },
+    {
+      "name": "3D vision sensor startup",
+      "position": "Joined as Chief Scientist",
+      "date": "2019"
+    },
+    {
+      "name": "City University of Hong Kong",
+      "position": "Research Assistant",
+      "date": "Apr. 2013 – Sep. 2014"
+    },
+    {
+      "name": "Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences",
+      "position": "Engineer",
+      "date": "Sep. 2010 – Mar. 2013"
+    }
+  ],
+  "awards": [
+    {
+      "name": "深圳市海外高层次人才（C类）",
+      "date": "2019"
+    },
+    {
+      "name": "深龙英才（领军人才）",
+      "date": "2020"
+    },
+    {
+      "name": "香港城市大学杰出学业表现奖",
+      "date": "2015, 2017"
+    },
+    {
+      "name": "香港城市大学研究生奖学金",
+      "date": "2014–2017"
+    },
+    {
+      "name": "南京师范大学优秀硕士学位论文",
+      "date": "2011"
+    },
+    {
+      "name": "江苏省普通高校研究生科研创新计划",
+      "date": "2009–2010"
+    }
+  ],
+  "bio": "<p>现任深圳市人工智能与机器人研究院（AIRS）、香港中文大学（深圳）副研究员。毕业于香港城市大学计算机科学系，获博士学位，导师为 <a href=\"http://www.cs.cityu.edu.hk/~rynson/\">Rynson W.H. Lau</a> 教授和 <a href=\"http://www.cs.cityu.edu.hk/~abchan/\">Antoni B. Chan</a> 教授。</p><p>研究领域涵盖计算机图形学、计算机视觉与机器学习，聚焦机器人三维感知、空间智能与具身世界建模，探索面向机器人精细作业、动态重建和结构化三维场景理解的几何与视觉方法。</p><p>入选深圳市海外高层次人才（C类）、深龙英才领军人才，两次获得香港城市大学杰出学业表现奖。累计发表 ACM TOG（SIGGRAPH Asia）、IEEE TMM、CVPR、IEEE TVCG 等期刊及会议论文约20篇，申请中国专利15项、美国专利1项。</p>"
+}

@@ -30,3 +30,11 @@
 }
 </script>
 {% endif %}
+
+{% if page.navbar_title == 'Home' %}
+<link rel="alternate" hreflang="en" href="{{ '/' | absolute_url }}">
+<link rel="alternate" hreflang="zh-CN" href="{{ '/zh/' | absolute_url }}">
+{% elsif page.navbar_title == 'Publications' %}
+<link rel="alternate" hreflang="en" href="{{ '/publications' | absolute_url }}">
+<link rel="alternate" hreflang="zh-CN" href="{{ '/zh/publications' | absolute_url }}">
+{% endif %}

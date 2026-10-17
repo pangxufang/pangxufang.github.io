@@ -43,7 +43,7 @@
                             {{ profile.short_bio }}
                         </div>
                         {% if profile.cv_link %}
-                            <a target="_blank" href="{{ profile.cv_link | relative_url }}"><i class="fas fa-file-alt"></i> Curriculum Vitae</a> <br/>
+                            <a target="_blank" href="{{ profile.cv_link | relative_url }}"><i class="fas fa-file-alt"></i> {% if page.lang == 'zh-CN' %}个人简历（英文）{% else %}Curriculum Vitae{% endif %}</a> <br/>
                         {% endif %}
                     </div>
         
