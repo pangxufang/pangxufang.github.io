@@ -7,9 +7,9 @@ pages:
   url: /publications
 - name: CV
   url: /cv.html
-- name: Recruitment
-  url: /recruitment.html
 - name: Blog
   url: /blog
 - name: Showcase
   url: /showcase
+- name: Opportunities
+  url: /opportunities.html

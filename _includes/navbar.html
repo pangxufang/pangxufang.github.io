@@ -12,7 +12,7 @@
                     {% assign nav_url = item.url %}
                     {% if page.lang == 'zh-CN' and item.name == 'Home' %}{% assign nav_url = '/zh/' %}{% endif %}
                     {% if page.lang == 'zh-CN' and item.name == 'Publications' %}{% assign nav_url = '/zh/publications' %}{% endif %}
-                    <a class="nav-link" href="{{ nav_url | relative_url }}">{% if page.lang == 'zh-CN' and item.name == 'Home' %}主页{% else %}{{ item.name }}{% endif %}</a>
+                    <a class="nav-link{% if item.name == 'Opportunities' %} nav-opportunities{% endif %}" href="{{ nav_url | relative_url }}">{% if page.lang == 'zh-CN' and item.name == 'Home' %}主页{% else %}{{ item.name }}{% endif %}</a>
                 </li>
                 {% endfor %}
                 {% if page.navbar_title == 'Home' or page.navbar_title == 'Publications' %}

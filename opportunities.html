@@ -1,0 +1,42 @@
+---
+layout: default
+title: Opportunities
+navbar_title: Opportunities
+permalink: /opportunities.html
+description: "Research internships and industry collaboration in AI, robotic 3D perception, high-precision sensing, and spatial intelligence."
+---
+<section class="card border-0 shadow-sm bg-white mb-3">
+  <div class="card-body p-4 p-md-5">
+    <h1 class="h3 mb-3">Opportunities</h1>
+    <p class="mb-0">Explore opportunities to join our research or collaborate on technology development at the intersection of AI, computer vision, and 3D sensing.</p>
+  </div>
+</section>
+<section class="card border-0 shadow-sm bg-white mb-3" aria-labelledby="internships-title">
+  <div class="card-body p-4">
+    <h2 class="h5 mb-3" id="internships-title">Internship Opportunities</h2>
+    <p class="text-muted">Hands-on research experience, professional development, and mentorship across the following areas.</p>
+    <div class="row">
+      {% for opportunity in site.data.recruitment %}
+      <div class="col-md-6 mb-3">
+        <article class="border rounded p-3 h-100">
+          <h3 class="h6 mb-3">{{ opportunity.title }}</h3>
+          <a class="small" href="{{ opportunity.url }}" target="_blank" rel="noopener noreferrer" aria-label="View {{ opportunity.title }} position on AIRS recruitment portal">Position details &amp; application <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+        </article>
+      </div>
+      {% endfor %}
+    </div>
+    <p class="small text-muted mb-0">Please refer to the AIRS recruitment portal for current availability, eligibility, and application details.</p>
+  </div>
+</section>
+<section class="card border-0 shadow-sm bg-white" aria-labelledby="collaboration-title">
+  <div class="card-body p-4">
+    <h2 class="h5 mb-3" id="collaboration-title">Industry Collaboration</h2>
+    <p>We welcome discussions with industry partners on joint research and technology development in:</p>
+    <ul class="mb-3 pl-3">
+      <li>High-precision 3D sensing, scanning, and vision-guided robotic systems.</li>
+      <li>Point cloud understanding, dynamic reconstruction, and multimodal spatial perception.</li>
+      <li>Video-to-3D generation of high-fidelity, interactive assets for spatial intelligence and embodied world modeling.</li>
+    </ul>
+    <a class="small" href="{{ '/#research' | relative_url }}">Explore our research</a>
+  </div>
+</section>
