@@ -161,3 +161,12 @@ div.lazy {
 .site-counter-reel > span { display: block; height: 24px; color: #e4c582; text-shadow: 0 1px 1px #000; font: 17px/24px Georgia, serif; font-variant-numeric: tabular-nums; }
 .site-counter-pending { color: #89703e; font: 12px/24px Georgia, serif; }
 @media (prefers-reduced-motion: reduce) { .site-counter-reel { transition: none; } }
+
+/* Language selector shares the counter's champagne case and mechanical reel. */
+.language-roller { display:inline-flex; padding:4px 5px; vertical-align:middle; text-decoration:none !important; }
+.language-roller-wheel { width:44px; }
+.language-roller-reel { transition:transform .35s cubic-bezier(.22,.7,.2,1); }
+.language-roller-reel > span { font:12px/24px Lato, "Microsoft YaHei", sans-serif; letter-spacing:1px; text-align:center; }
+.language-roller:hover .language-roller-reel, .language-roller:focus-visible .language-roller-reel { transform:translateY(-24px); }
+.language-roller:focus-visible { outline:2px solid #89703e; outline-offset:3px; }
+@media(prefers-reduced-motion:reduce) { .language-roller-reel { transition:none; } }
