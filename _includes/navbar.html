@@ -1,14 +1,6 @@
 <nav class="navbar navbar-expand-sm navbar-light fixed-top mb-5 shadow-sm">
     <div class="{% if page.container_class %}{{ page.container_class }}{% else %}container-lg{% endif %}">
         <a class="navbar-brand"><strong>{{site.data.profile.navbar_name}}</strong></a>
-        {% if page.navbar_title == 'Home' or page.navbar_title == 'Publications' %}
-        <div class="small ml-auto mr-3 order-sm-last ml-sm-3" aria-label="Language / 语言">
-            {% if page.navbar_title == 'Publications' %}{% assign en_url = '/publications' %}{% assign zh_url = '/zh/publications' %}{% else %}{% assign en_url = '/' %}{% assign zh_url = '/zh/' %}{% endif %}
-            <a href="{{ en_url | relative_url }}" data-language-switch lang="en" hreflang="en" {% unless page.lang == 'zh-CN' %}aria-current="page" class="font-weight-bold"{% endunless %}>EN</a>
-            <span class="text-muted mx-1">/</span>
-            <a href="{{ zh_url | relative_url }}" data-language-switch lang="zh-CN" hreflang="zh-CN" {% if page.lang == 'zh-CN' %}aria-current="page" class="font-weight-bold"{% endif %}>中文</a>
-        </div>
-        {% endif %}
         <button class="navbar-toggler" style="font-size: 1em; padding: 0.5em;" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-map"></i> Menu
         </button>

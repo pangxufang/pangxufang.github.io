@@ -1,0 +1,6 @@
+        <div class="small text-right" aria-label="Language / 语言">
+            {% if page.navbar_title == 'Publications' %}{% assign en_url = '/publications' %}{% assign zh_url = '/zh/publications' %}{% else %}{% assign en_url = '/' %}{% assign zh_url = '/zh/' %}{% endif %}
+            <a href="{{ en_url | relative_url }}" data-language-switch lang="en" hreflang="en" {% unless page.lang == 'zh-CN' %}aria-current="page" class="font-weight-bold"{% endunless %}>EN</a>
+            <span class="text-muted mx-1">/</span>
+            <a href="{{ zh_url | relative_url }}" data-language-switch lang="zh-CN" hreflang="zh-CN" {% if page.lang == 'zh-CN' %}aria-current="page" class="font-weight-bold"{% endif %}>中文</a>
+        </div>

@@ -1,0 +1,16 @@
+<section class="mt-5 mb-3 text-center" aria-label="Academic journey">
+  <p class="small text-muted mb-3">{% if page.lang == 'zh-CN' %}求学与工作足迹{% else %}Along the Way{% endif %}</p>
+  <div class="institution-trail">
+    {% for institution in site.data.institutions %}
+    <a href="{{ institution.url }}" target="_blank" rel="noopener noreferrer" title="{% if page.lang == 'zh-CN' %}{{ institution.name_zh }}{% else %}{{ institution.name }}{% endif %}">
+      <img src="{{ institution.logo | relative_url }}" alt="{% if page.lang == 'zh-CN' %}{{ institution.name_zh }}{% else %}{{ institution.name }}{% endif %}" loading="lazy">
+    </a>
+    {% endfor %}
+  </div>
+</section>
+<style>
+.institution-trail { display:flex; align-items:center; justify-content:center; gap:28px; }
+.institution-trail a { flex:1 1 0; min-width:0; max-width:210px; }
+.institution-trail img { max-width:100%; max-height:40px; object-fit:contain; }
+@media(max-width:575px) { .institution-trail { gap:12px; } .institution-trail img { max-height:28px; } }
+</style>

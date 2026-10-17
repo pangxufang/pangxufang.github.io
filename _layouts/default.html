@@ -21,6 +21,7 @@
 <body class="bg-light d-flex flex-column min-vh-100" {{ page.body_attr }}>
     {% include navbar.html %}
     <main class="flex-grow-1 flex-shrink-0 {% if page.container_class %}{{ page.container_class }}{% else %}container-lg{% endif %}">
+        {% if page.navbar_title == 'Publications' %}<div class="mb-2">{% include language_switch.html %}</div>{% endif %}
         {{content}}
     </main>
     {% include footer.html %}
