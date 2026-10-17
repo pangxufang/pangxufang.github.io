@@ -1,6 +1,9 @@
 ---
 title: "Algorithm for Rapidly and Adaptively Up-sampling Point-set Surface"
 language: zh-CN
+authors_zh:
+- 庞旭芳
+- 庞明勇
 title_zh: "点集曲面的快速自适应上采样算法"
 title_zh_note: "Translated from the existing English record; original Chinese wording pending verification."
 pub_zh: "小型微型计算机系统"

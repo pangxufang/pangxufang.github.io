@@ -1,8 +1,10 @@
 {% assign item = include.item %}
 {% assign display_title = item.title %}
+{% assign display_authors = item.authors %}
 {% assign display_pub = item.pub %}
 {% assign display_abstract = item.abstract %}
 {% if page.lang == 'zh-CN' and item.language == 'zh-CN' %}
+  {% assign display_authors = item.authors_zh | default: item.authors %}
   {% assign display_title = item.title_zh | default: item.title %}
   {% assign display_pub = item.pub_zh | default: item.pub %}
   {% assign display_abstract = item.abstract_zh | default: item.abstract %}
@@ -18,7 +20,7 @@
         </div>
         <div class="col-md-9 col-xl-10 p-3 pl-md-0">
             <h5 class="mt-0 mb-1 font-weight-normal">{{ display_title }}</h5>
-            <p class="mt-0 mb-0 small">{% include widgets/author_list.html authors=item.authors %}</p>
+            <p class="mt-0 mb-0 small">{% include widgets/author_list.html authors=display_authors %}</p>
             <p class="mt-0 mb-0 small">{{item.pub_pre}}<i>{{ display_pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }} <span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span></p>
             <p class="mt-0 mb-0 small text-muted">{{ display_abstract }}</p>
             
@@ -43,7 +45,7 @@
             <div class="mb-auto"></div>
             <div>
                 <h5 class="mt-0 mb-1 font-weight-normal">{{ display_title }}</h5>
-                <p class="mt-0 mb-0 small">{% include widgets/author_list.html authors=item.authors %}</p>
+                <p class="mt-0 mb-0 small">{% include widgets/author_list.html authors=display_authors %}</p>
                 <p class="mt-0 mb-0 small">{{item.pub_pre}}<i>{{ display_pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }} <span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span></p>
                 <p class="mt-0 mb-0 small text-muted">{{ display_abstract }}</p>
                 
